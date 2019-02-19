@@ -1,0 +1,202 @@
+.circle-header {
+  margin-top: 115px;
+  text-align: center;
+  @media #{$breakpoint-large} {
+    margin-top: 150px;
+  }
+  .title {
+    margin-bottom: 10px;
+  }
+}
+.circle-overview {
+  margin-top: 65px;
+  @media #{$breakpoint-large} {
+    margin-top: 100px;
+  }
+  .circle-overview-text {
+    @media #{$breakpoint-medium} {
+      padding: 0 75px;
+    }
+    @media #{$breakpoint-xlarge} {
+      padding: 0 150px;
+    }
+    .circle-overview-overview {
+      margin-bottom: 35px;
+      @media #{$breakpoint-large} {
+        margin-bottom: 50px;
+      }
+      h1 {
+        margin-bottom: 20px;
+      }
+      h3 {
+        margin-bottom: 20px;
+      }
+    }
+    .circle-overview-problem {
+      margin-bottom: 35px;
+      @media #{$breakpoint-large} {
+        margin-bottom: 50px;
+      }
+      h2 {
+        margin-bottom: 20px;
+      }
+    }
+    .circle-overview-solution {
+      margin-bottom: 35px;
+      @media #{$breakpoint-large} {
+        margin-bottom: 50px;
+      }
+      h2 {
+        margin-bottom: 20px;
+      }
+    }
+    .circle-overview-technology {
+      margin-bottom: 65px;
+      @media #{$breakpoint-large} {
+        margin-bottom: 100px;
+      }
+      h2 {
+        margin-bottom: 20px;
+      }
+      .tech-list {
+        ul {
+          padding-left: 25px;
+        }
+      }
+    }
+  }
+}
+.template-breakdown {
+  .circle-breakdown-group {
+    @media #{$breakpoint-medium} {
+      padding: 0 75px;
+    }
+    @media #{$breakpoint-xlarge} {
+      padding: 0 150px;
+    }
+    h1 {
+      margin-bottom: 35px;
+      @media #{$breakpoint-large} {
+        margin-bottom: 50px;
+      }
+    }
+    h2 {
+      margin-bottom: 20px;
+    }
+    .circle-requirements {
+      margin-bottom: 20px;
+    }
+    ul {
+      margin-bottom: 35px;
+      padding-left: 25px;
+      @media #{$breakpoint-large} {
+        margin-bottom: 50px;
+      }
+    }
+  }
+  .circle-wireframe {
+    margin-top: 35px;
+    @media #{$breakpoint-large} {
+      margin-top: 50px;
+    }
+    width: 100%;
+    img {
+      object-fit: contain;
+      width: 100%;
+    }
+  }
+  .circle-ui-group {
+    margin-top: 35px;
+    @media #{$breakpoint-medium} {
+      padding: 0 75px;
+    }
+    @media #{$breakpoint-large} {
+      margin-top: 50px;
+    }
+    @media #{$breakpoint-xlarge} {
+      padding: 0 150px;
+    }
+    h2 {
+      margin-bottom: 20px;
+    }
+    .circle-colors {
+      margin-top: 35px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      @media #{$breakpoint-medium} {
+        flex-direction: row;
+      }
+      @media #{$breakpoint-large} {
+        margin-top: 50px;
+      }
+      .brand-color-group {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        &:nth-of-type(2),
+        &:nth-of-type(3) {
+          margin-top: 20px;
+          @media #{$breakpoint-medium} {
+            margin-top: 0;
+          }
+        }
+        .circle-brand-title {
+          margin-bottom: 10px;
+        }
+        .two-color-group {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          .circle-color-group {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 0 10px;
+            @media #{$breakpoint-medium} {
+              padding: 0 20px;
+            }
+            p {
+              margin-bottom: 10px;
+            }
+            .circle-color {
+              width: 100%;
+              img {
+                object-fit: contain;
+                width: 100%;
+                border-radius: 100%;
+                box-shadow: 0 3px 15px rgba(0, 0, 0, 0.5);
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  .circle-design-overview-group {
+    @media #{$breakpoint-medium} {
+      padding: 0 75px;
+    }
+    @media #{$breakpoint-xlarge} {
+      padding: 0 150px;
+    }
+    h2 {
+      margin: 35px 0;
+      @media #{$breakpoint-large} {
+        margin: 50px 0;
+      }
+    }
+    .circle-overview {
+      width: 100%;
+      margin-top: 35px;
+      @media #{$breakpoint-large} {
+        margin-top: 50px;
+      }
+      img {
+        object-fit: contain;
+        width: 100%;
+      }
+    }
+  }
+}

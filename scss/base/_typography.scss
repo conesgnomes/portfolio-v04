@@ -1,0 +1,165 @@
+// Font from xl to small = 1.6x bigger and .625x smaller
+
+h1, h2, h3, h4, h5, h6, p, ul, a {
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  font-family: "lato-black";
+  font-size: 25px;
+  @media #{$breakpoint-large} {
+    font-size: 32px;
+  }
+  @media #{$breakpoint-xlarge} {
+    font-size: 40px;
+  }
+}
+
+h2 {
+  font-family: "lato-bold";
+  font-size: 18px;
+  @media #{$breakpoint-large} {
+    font-size: 22px;
+  }
+  @media #{$breakpoint-xlarge} {
+    font-size: 24px;
+  }
+}
+
+h3 {
+  font-family: "lato-regular";
+  font-size: 16px;
+  line-height: 24px;
+  @media #{$breakpoint-large} {
+    font-size: 18px;
+    line-height: 28px;
+  }
+  @media #{$breakpoint-xlarge} {
+    font-size: 20px;
+    line-height: 35px;
+  }
+}
+
+h4 {
+  font-family: "lato-regular";
+  color: #ffffff;
+  font-size: 10px;
+  text-transform: uppercase;
+  @media #{$breakpoint-large} {
+    font-size: 12px;
+  }
+  @media #{$breakpoint-xlarge} {
+    font-size: 14px;
+  }
+}
+
+p, li {
+  font-family: "lato-regular";
+  font-size: 14px;
+  line-height: 19px;
+  @media #{$breakpoint-large} {
+    font-size: 15px;
+    line-height: 20px;
+  }
+  @media #{$breakpoint-xlarge} {
+    font-size: 16px;
+    line-height: 22px;
+  }
+}
+
+.nav-item {
+  font-family: "lato-regular";
+  color: #999999;
+  font-size: 14px;
+  text-decoration: none;
+  text-transform: uppercase;
+  @media #{$breakpoint-large} {
+    font-size: 18px;
+  }
+}
+
+.social-icons {
+  a {
+    font-size: 36px;
+    color: #999999;
+    @media #{$breakpoint-xlarge} {
+      font-size: 40px;
+    }
+  }
+}
+
+.title {
+  font-family: "lato-black";
+  text-transform: uppercase;
+  font-size: 27px;
+  line-height: 30px;
+  @media #{$breakpoint-medium} {
+    font-size: 30px;
+  }
+  @media #{$breakpoint-large} {
+    font-size: 38px;
+  }
+  @media #{$breakpoint-xlarge} {
+    font-size: 48px;
+  }
+}
+
+.subtitle {
+  font-family: "lato-regular";
+  color: #999999;
+  font-size: 15px;
+  @media #{$breakpoint-large} {
+    font-size: 19px;
+  }
+  @media #{$breakpoint-xlarge} {
+    font-size: 24px;
+  }
+}
+
+.bold {
+  font-family: "lato-bold";
+}
+
+.circle-brand-title {
+  font-family: "lato-regular";
+  text-transform: uppercase;
+  color: #000000;
+  font-size: 14px;
+  @media #{$breakpoint-large} {
+    font-size: 16px;
+  }
+}
+
+.color-title {
+  font-family: "lato-regular";
+  text-transform: uppercase;
+  color: #999999;
+  font-size: 14px;
+  @media #{$breakpoint-large} {
+    font-size: 16px;
+  }
+}
+
+.fabric-title {
+  font-family: "lato-regular";
+  text-transform: uppercase;
+  color: #999999;
+  font-size: 14px;
+  @media #{$breakpoint-large} {
+    font-size: 16px;
+  }
+}
+
+footer {
+  p {
+    font-family: "lato-regular";
+    color: #999999;
+    font-size: 10px;
+    text-decoration: none;
+    text-transform: uppercase;
+    @media #{$breakpoint-xlarge} {
+      font-size: 14px;
+    }
+  }
+}

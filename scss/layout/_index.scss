@@ -1,0 +1,260 @@
+.transition-fade {
+  transition: .4s;
+  opacity: 1;
+  .index-header {
+    transition: .4s;
+    opacity: 1;
+    margin-top: 150px;
+    padding: 0 15px;
+    @media #{$breakpoint-medium} {
+      padding: 0 150px;
+    }
+    @media #{$breakpoint-large} {
+      margin-top: 200px;
+    }
+    @media #{$breakpoint-xlarge} {
+      padding: 0 300px;
+    }
+    h2 {
+      margin-bottom: 50px;
+      a {
+        text-decoration: none;
+        padding-bottom: 1px;
+        color: #999999;
+        transition: color 0.2s ease-in;
+        &:hover {
+          color: #000000;
+        }
+      }
+    }
+    .social-icons {
+      display: flex;
+      justify-content: center;
+      .social-item {
+        padding: 0 15px;
+        transition: color 0.2s ease-in;
+        &:hover {
+          color: #000000;
+        }
+        @media #{$breakpoint-medium} {
+          padding: 0 25px;
+        }
+      }
+    }
+  }
+  .index-body {
+    .project-group-1 {
+      @include project-group(url('/../img/index-GDS.png'), #EE968A);
+    }
+    .project-group-2 {
+      @include project-group(url('/../img/index-daily.png'), #C8AE7F);
+    }
+    .project-group-3 {
+      @include project-group(url('/../img/index-booth.png'), #F3C85E);
+    }
+  }
+}
+html.is-animating .transition-fade {
+  opacity: 0;
+}
+  // .project-right {
+  //   margin-top: 75px;
+  //   display: flex;
+  //   flex-direction: column;
+  //   align-items: flex-start;
+  //   @media #{$breakpoint-medium} {
+  //     flex-direction: row;
+  //     align-items: center;
+  //   }
+  //   .project-image {
+  //     width: 100%;
+  //     @media #{$breakpoint-medium} {
+  //       width: 50%;
+  //     }
+  //     @media #{$breakpoint-large} {
+  //     }
+  //     @media #{$breakpoint-xlarge} {
+  //     }
+  //     img {
+  //       object-fit: contain;
+  //       width: 100%;
+  //     }
+  //   }
+  //   .project-text {
+  //     @media #{$breakpoint-medium} {
+  //       margin-left: 50px;
+  //       width: 350px;
+  //     }
+  //     @include project-overview;
+  //     .button-container-booth {
+  //       @include cta-button(#1793C3);
+  //     }
+  //     .button-container-rrg {
+  //       @include cta-button(#752929);
+  //     }
+  //   }
+  // }
+//   .project-left {
+//     margin-top: 75px;
+//     display: flex;
+//     flex-direction: column;
+//     align-items: flex-start;
+//     @media #{$breakpoint-medium} {
+//       flex-direction: row-reverse;
+//       align-items: center;
+//     }
+//     .project-image {
+//       width: 100%;
+//       @media #{$breakpoint-medium} {
+//         width: 50%;
+//       }
+//       @media #{$breakpoint-large} {
+//         margin-left: 50px;
+//       }
+//       @media #{$breakpoint-xlarge} {
+//         margin-left: 100px;
+//       }
+//       img {
+//         object-fit: contain;
+//         width: 100%;
+//       }
+//     }
+//     .project-text {
+//       @media #{$breakpoint-medium} {
+//         margin-left: 50px;
+//         width: 350px;
+//       }
+//       @include project-overview;
+//       .button-container-daily {
+//         @include cta-button(#CCAE78);
+//       }
+//       .button-container-sq1 {
+//         @include cta-button(#D92118);
+//       }
+//     }
+//   }
+//   .mobile-project {
+//     @media #{$breakpoint-medium} {
+//       margin: -25px 0 -50px 0;
+//     }
+//     @media #{$breakpoint-xlarge} {
+//       margin: -50px 0 -100px 0;
+//     }
+//   }
+// }
+
+// Old Projects
+
+  // .project-left {
+  //   margin-top: 50px;
+  //   @media #{$breakpoint-medium} {
+  //     padding-right: 75px;
+  //   }
+  //   @media #{$breakpoint-xlarge} {
+  //     padding-right: 150px;
+  //   }
+  //   .circle {
+  //     display: flex;
+  //     flex-direction: column;
+  //     justify-content: center;
+  //     align-items: center;
+  //     @media #{$breakpoint-medium} {
+  //       flex-direction: row-reverse;
+  //     }
+  //     .project-image {
+  //       width: 100%;
+  //       display: flex;
+  //       justify-content: center;
+  //       align-items: center;
+  //       height: 100%;
+  //       margin: 50px 0 30px 0;
+  //       @media #{$breakpoint-medium} {
+  //         width: 60%;
+  //       }
+  //       img {
+  //         object-fit: contain;
+  //         width: 80%;
+  //       }
+  //     }
+  //     .project-text {
+  //       @include project-overview;
+  //       .button-container {
+  //         @include cta-button(#205F98);
+  //       }
+  //     }
+  //   }
+  // }
+  // .project-right {
+  //   margin-top: 50px;
+  //   @media #{$breakpoint-medium} {
+  //     padding-right: 75px;
+  //   }
+  //   @media #{$breakpoint-xlarge} {
+  //     padding-right: 150px;
+  //   }
+  //   .catspot {
+  //     display: flex;
+  //     flex-direction: column;
+  //     justify-content: center;
+  //     align-items: center;
+  //     @media #{$breakpoint-medium} {
+  //       flex-direction: row;
+  //     }
+  //     .project-image {
+  //       width: 100%;
+  //       @media #{$breakpoint-medium} {
+  //         width: 60%;
+  //       }
+  //       img {
+  //         object-fit: contain;
+  //         width: 100%;
+  //       }
+  //     }
+  //     .project-text {
+  //       @include project-overview;
+  //       .button-container {
+  //         @include cta-button(#8EC343);
+  //         .btn:hover {
+  //           box-shadow: -5px 10px 15px rgba(0, 0, 0, 0.5);
+  //         }
+  //       }
+  //     }
+  //   }
+  // }
+  // .project-left {
+  //   margin-top: 50px;
+  //   @media #{$breakpoint-medium} {
+  //     padding-left: 75px;
+  //   }
+  //   @media #{$breakpoint-xlarge} {
+  //     padding-left: 150px;
+  //   }
+  //   .digital-gaming-museum {
+  //     display: flex;
+  //     flex-direction: column;
+  //     justify-content: center;
+  //     align-items: center;
+  //     @media #{$breakpoint-medium} {
+  //       flex-direction: row-reverse;
+  //     }
+  //     .project-image {
+  //       width: 100%;
+  //       @media #{$breakpoint-medium} {
+  //         width: 60%;
+  //       }
+  //       img {
+  //         object-fit: contain;
+  //         width: 100%;
+  //       }
+  //     }
+  //     .project-text {
+  //       @include project-overview;
+  //       .button-container {
+  //         @include cta-button(#89BCA9);
+  //         .btn:hover {
+  //           box-shadow: -5px 10px 15px rgba(0, 0, 0, 0.5);
+  //         }
+  //       }
+  //     }
+  //   }
+  // }
