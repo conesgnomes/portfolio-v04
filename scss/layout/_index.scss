@@ -17,6 +17,7 @@
       font-family: "lato-light";
       font-size: 22px;
       color: #ffffff;
+      line-height: 36px;
       margin-top: 10px;
       @media #{$breakpoint-large} {
         font-size: 24px;
@@ -55,13 +56,22 @@
     display: flex;
     justify-content: space-between;
     .project-one {
-      background-color: red;
+      background-image: url("../../img/GDS-landing-background.png"), linear-gradient(45deg, rgba(171,209,219,100), rgba(114,164,180,100));
+      background-position: center 35vh, top right;
+      background-size: cover;
+      background-repeat: no-repeat;
     }
     .project-two {
-      background-color: green;
+      background-image: url("../../img/booth-landing-background.png"), linear-gradient(45deg, rgba(146,147,83,100), rgba(235,238,152,100));
+      background-position: center 30vh, top right;
+      background-size: 120%;
+      background-repeat: no-repeat;
     }
     .project-three {
-      background-color: blue;
+      background-image: url("../../img/daily-landing-background.png"), linear-gradient(45deg, rgba(228,143,186,100), rgba(164,79,122,100));
+      background-position: center 20vh, top right;
+      background-size: 150%;
+      background-repeat: no-repeat;
     }
     .project {
       top: 0;
