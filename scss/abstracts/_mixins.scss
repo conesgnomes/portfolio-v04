@@ -4,11 +4,27 @@
     border: 2px solid $button-color;
     display: inline-block;
     padding: 8px 20px;
+    font-family: "lato-black";
+    text-transform: uppercase;
+    color: $button-color;
+    text-decoration: none;
+    font-size: 10px;
+    letter-spacing: 2px;
     position: relative;
-    overflow: hidden;
+    transition: color 150ms;
     @media #{$breakpoint-medium} {
-      padding: 10px 30px;
+      font-size: 12px;
+      padding: 10px 40px;
     }
+    @media #{$breakpoint-large} {
+      transition: background-color .2s;
+      &:hover {
+        background-color: $button-color;
+        color: #1C2124;
+      }
+    }
+    // position: relative;
+    // overflow: hidden;
     a {
       font-family: "lato-black";
       text-transform: uppercase;
@@ -20,15 +36,6 @@
       transition: color 150ms;
       @media #{$breakpoint-medium} {
         font-size: 12px;
-      }
-    }
-    @media #{$breakpoint-large} {
-      transition: background-color .2s;
-      &:hover {
-        background-color: $button-color;
-        > a {
-          color: #1C2124;
-        }
       }
     }
   }

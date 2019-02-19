@@ -1,260 +1,105 @@
-.transition-fade {
-  transition: .4s;
-  opacity: 1;
-  .index-header {
-    transition: .4s;
-    opacity: 1;
-    margin-top: 150px;
-    padding: 0 15px;
-    @media #{$breakpoint-medium} {
-      padding: 0 150px;
+.index {
+  // background-color: green;
+  height: 100%;
+}
+.index-header {
+  position: absolute;
+  padding-top: 40px;
+  padding-left: 40px;
+  padding-right: 40px;
+  display: flex;
+  justify-content: space-between;
+  background-image: linear-gradient(rgba(28,33,36,100), rgba(28,33,36,0));
+  height: 50vh;
+  .title-subtitle {
+    width: 60%;
+    .hero-subtitle {
+      font-family: "lato-light";
+      font-size: 22px;
+      color: #ffffff;
+      margin-top: 10px;
+      @media #{$breakpoint-large} {
+        font-size: 24px;
+      }
+      @media #{$breakpoint-xlarge} {
+        font-size: 28px;
+      }
     }
-    @media #{$breakpoint-large} {
-      margin-top: 200px;
-    }
-    @media #{$breakpoint-xlarge} {
-      padding: 0 300px;
-    }
-    h2 {
-      margin-bottom: 50px;
-      a {
-        text-decoration: none;
-        padding-bottom: 1px;
-        color: #999999;
-        transition: color 0.2s ease-in;
-        &:hover {
-          color: #000000;
+  }
+  nav {
+    display: flex;
+    flex-direction: column;
+    .navigation {
+      display: flex;
+      flex-direction: row;
+      li {
+        list-style: none;
+        .nav-item {
+          margin-left: 30px;
         }
       }
     }
     .social-icons {
       display: flex;
+      flex-direction: column;
+      align-items: flex-end;
       justify-content: center;
       .social-item {
-        padding: 0 15px;
-        transition: color 0.2s ease-in;
-        &:hover {
-          color: #000000;
-        }
-        @media #{$breakpoint-medium} {
-          padding: 0 25px;
+        margin-top: 30px;
+      }
+    }
+  }
+}
+.index-body {
+  .project-group {
+    display: flex;
+    justify-content: space-between;
+    .project-one {
+      background-color: red;
+    }
+    .project-two {
+      background-color: green;
+    }
+    .project-three {
+      background-color: blue;
+    }
+    .project {
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      overflow: hidden;
+      width: 32.5%;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: baseline;
+      .project-label {
+        background-color: #1C2124;
+        box-shadow: 0px 0px 30px rgba(0,0,0,50);
+        border-radius: 4px;
+        width: 70%;
+        position: relative;
+        top: 65vh;
+        .project-label-copy {
+          padding: 20px;
+          .project-subtitle {
+            font-family: "lato-regular";
+            font-size: 14px;
+            text-transform: uppercase;
+            color: #ffffff;
+          }
+          .project-title {
+            font-family: "lato-black";
+            font-size: 36px;
+            color: #ffffff;
+          }
+          .button-container {
+            padding-top: 25px;
+            @include cta-button(#ffffff);
+          }
         }
       }
     }
   }
-  .index-body {
-    .project-group-1 {
-      @include project-group(url('/../img/index-GDS.png'), #EE968A);
-    }
-    .project-group-2 {
-      @include project-group(url('/../img/index-daily.png'), #C8AE7F);
-    }
-    .project-group-3 {
-      @include project-group(url('/../img/index-booth.png'), #F3C85E);
-    }
-  }
 }
-html.is-animating .transition-fade {
-  opacity: 0;
-}
-  // .project-right {
-  //   margin-top: 75px;
-  //   display: flex;
-  //   flex-direction: column;
-  //   align-items: flex-start;
-  //   @media #{$breakpoint-medium} {
-  //     flex-direction: row;
-  //     align-items: center;
-  //   }
-  //   .project-image {
-  //     width: 100%;
-  //     @media #{$breakpoint-medium} {
-  //       width: 50%;
-  //     }
-  //     @media #{$breakpoint-large} {
-  //     }
-  //     @media #{$breakpoint-xlarge} {
-  //     }
-  //     img {
-  //       object-fit: contain;
-  //       width: 100%;
-  //     }
-  //   }
-  //   .project-text {
-  //     @media #{$breakpoint-medium} {
-  //       margin-left: 50px;
-  //       width: 350px;
-  //     }
-  //     @include project-overview;
-  //     .button-container-booth {
-  //       @include cta-button(#1793C3);
-  //     }
-  //     .button-container-rrg {
-  //       @include cta-button(#752929);
-  //     }
-  //   }
-  // }
-//   .project-left {
-//     margin-top: 75px;
-//     display: flex;
-//     flex-direction: column;
-//     align-items: flex-start;
-//     @media #{$breakpoint-medium} {
-//       flex-direction: row-reverse;
-//       align-items: center;
-//     }
-//     .project-image {
-//       width: 100%;
-//       @media #{$breakpoint-medium} {
-//         width: 50%;
-//       }
-//       @media #{$breakpoint-large} {
-//         margin-left: 50px;
-//       }
-//       @media #{$breakpoint-xlarge} {
-//         margin-left: 100px;
-//       }
-//       img {
-//         object-fit: contain;
-//         width: 100%;
-//       }
-//     }
-//     .project-text {
-//       @media #{$breakpoint-medium} {
-//         margin-left: 50px;
-//         width: 350px;
-//       }
-//       @include project-overview;
-//       .button-container-daily {
-//         @include cta-button(#CCAE78);
-//       }
-//       .button-container-sq1 {
-//         @include cta-button(#D92118);
-//       }
-//     }
-//   }
-//   .mobile-project {
-//     @media #{$breakpoint-medium} {
-//       margin: -25px 0 -50px 0;
-//     }
-//     @media #{$breakpoint-xlarge} {
-//       margin: -50px 0 -100px 0;
-//     }
-//   }
-// }
-
-// Old Projects
-
-  // .project-left {
-  //   margin-top: 50px;
-  //   @media #{$breakpoint-medium} {
-  //     padding-right: 75px;
-  //   }
-  //   @media #{$breakpoint-xlarge} {
-  //     padding-right: 150px;
-  //   }
-  //   .circle {
-  //     display: flex;
-  //     flex-direction: column;
-  //     justify-content: center;
-  //     align-items: center;
-  //     @media #{$breakpoint-medium} {
-  //       flex-direction: row-reverse;
-  //     }
-  //     .project-image {
-  //       width: 100%;
-  //       display: flex;
-  //       justify-content: center;
-  //       align-items: center;
-  //       height: 100%;
-  //       margin: 50px 0 30px 0;
-  //       @media #{$breakpoint-medium} {
-  //         width: 60%;
-  //       }
-  //       img {
-  //         object-fit: contain;
-  //         width: 80%;
-  //       }
-  //     }
-  //     .project-text {
-  //       @include project-overview;
-  //       .button-container {
-  //         @include cta-button(#205F98);
-  //       }
-  //     }
-  //   }
-  // }
-  // .project-right {
-  //   margin-top: 50px;
-  //   @media #{$breakpoint-medium} {
-  //     padding-right: 75px;
-  //   }
-  //   @media #{$breakpoint-xlarge} {
-  //     padding-right: 150px;
-  //   }
-  //   .catspot {
-  //     display: flex;
-  //     flex-direction: column;
-  //     justify-content: center;
-  //     align-items: center;
-  //     @media #{$breakpoint-medium} {
-  //       flex-direction: row;
-  //     }
-  //     .project-image {
-  //       width: 100%;
-  //       @media #{$breakpoint-medium} {
-  //         width: 60%;
-  //       }
-  //       img {
-  //         object-fit: contain;
-  //         width: 100%;
-  //       }
-  //     }
-  //     .project-text {
-  //       @include project-overview;
-  //       .button-container {
-  //         @include cta-button(#8EC343);
-  //         .btn:hover {
-  //           box-shadow: -5px 10px 15px rgba(0, 0, 0, 0.5);
-  //         }
-  //       }
-  //     }
-  //   }
-  // }
-  // .project-left {
-  //   margin-top: 50px;
-  //   @media #{$breakpoint-medium} {
-  //     padding-left: 75px;
-  //   }
-  //   @media #{$breakpoint-xlarge} {
-  //     padding-left: 150px;
-  //   }
-  //   .digital-gaming-museum {
-  //     display: flex;
-  //     flex-direction: column;
-  //     justify-content: center;
-  //     align-items: center;
-  //     @media #{$breakpoint-medium} {
-  //       flex-direction: row-reverse;
-  //     }
-  //     .project-image {
-  //       width: 100%;
-  //       @media #{$breakpoint-medium} {
-  //         width: 60%;
-  //       }
-  //       img {
-  //         object-fit: contain;
-  //         width: 100%;
-  //       }
-  //     }
-  //     .project-text {
-  //       @include project-overview;
-  //       .button-container {
-  //         @include cta-button(#89BCA9);
-  //         .btn:hover {
-  //           box-shadow: -5px 10px 15px rgba(0, 0, 0, 0.5);
-  //         }
-  //       }
-  //     }
-  //   }
-  // }

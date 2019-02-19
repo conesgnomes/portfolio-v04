@@ -7,23 +7,25 @@ h1, h2, h3, h4, h5, h6, p, ul, a {
 
 h1 {
   font-family: "lato-black";
-  font-size: 25px;
+  font-size: 30px;
+  color: #ffffff;
+  text-transform: uppercase;
+  @media #{$breakpoint-large} {
+    font-size: 48px;
+  }
+  @media #{$breakpoint-xlarge} {
+    font-size: 60px;
+  }
+}
+
+h2 {
+  font-family: "lato-black";
+  font-size: 28px;
   @media #{$breakpoint-large} {
     font-size: 32px;
   }
   @media #{$breakpoint-xlarge} {
     font-size: 40px;
-  }
-}
-
-h2 {
-  font-family: "lato-bold";
-  font-size: 18px;
-  @media #{$breakpoint-large} {
-    font-size: 22px;
-  }
-  @media #{$breakpoint-xlarge} {
-    font-size: 24px;
   }
 }
 
@@ -70,23 +72,29 @@ p, li {
 
 .nav-item {
   font-family: "lato-regular";
-  color: #999999;
-  font-size: 14px;
+  color: #ffffff;
+  // font-size: 14px;
   text-decoration: none;
   text-transform: uppercase;
   @media #{$breakpoint-large} {
-    font-size: 18px;
+    font-size: 22px;
   }
 }
 
 .social-icons {
   a {
-    font-size: 36px;
-    color: #999999;
-    @media #{$breakpoint-xlarge} {
-      font-size: 40px;
+    font-size: 30px;
+    color: #ffffff;
+    @media #{$breakpoint-large} {
+      // font-size: 30px;
     }
   }
+}
+
+.inline-link {
+  font-family: "lato-black";
+  text-decoration: none;
+  color: inherit;
 }
 
 .title {
@@ -105,7 +113,7 @@ p, li {
   }
 }
 
-.subtitle {
+.project-subtitle {
   font-family: "lato-regular";
   color: #999999;
   font-size: 15px;
