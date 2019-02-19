@@ -57,19 +57,19 @@
     justify-content: space-between;
     .project-one {
       background-image: url("../../img/GDS-landing-background.png"), linear-gradient(45deg, rgba(171,209,219,100), rgba(114,164,180,100));
-      background-position: center 35vh, top right;
+      background-position: center 40vh, top right;
       background-size: cover;
       background-repeat: no-repeat;
     }
     .project-two {
       background-image: url("../../img/booth-landing-background.png"), linear-gradient(45deg, rgba(146,147,83,100), rgba(235,238,152,100));
-      background-position: center 30vh, top right;
+      background-position: center 40vh, top right;
       background-size: 120%;
       background-repeat: no-repeat;
     }
     .project-three {
       background-image: url("../../img/daily-landing-background.png"), linear-gradient(45deg, rgba(228,143,186,100), rgba(164,79,122,100));
-      background-position: center 20vh, top right;
+      background-position: center 40vh, top right;
       background-size: 150%;
       background-repeat: no-repeat;
     }
@@ -92,7 +92,7 @@
         position: relative;
         top: 65vh;
         .project-label-copy {
-          padding: 20px;
+          padding: 20px 60px 20px 20px;
           .project-subtitle {
             font-family: "lato-regular";
             font-size: 14px;
@@ -101,8 +101,13 @@
           }
           .project-title {
             font-family: "lato-black";
-            font-size: 36px;
             color: #ffffff;
+            @media #{$breakpoint-medium} {
+              font-size: 28px;
+            }
+            @media #{$breakpoint-xlarge} {
+              font-size: 36px;
+            }
           }
           .button-container {
             padding-top: 25px;
