@@ -1,6 +1,6 @@
-@mixin project-card($img-url, $background-gradient-start, $background-gradient-end, $background-position, $background-size) {
+@mixin project-card($img-url, $background-gradient-start, $background-gradient-end, $background-position-x, $background-position-y, $background-size) {
   background-image: ($img-url), linear-gradient(45deg, $background-gradient-start, $background-gradient-end);
-  background-position: center $background-position, top right;
+  background-position: $background-position-x $background-position-y, top right;
   background-size: $background-size;
   background-repeat: no-repeat;
 }
