@@ -70,14 +70,24 @@ p, li {
   }
 }
 
+.bold {
+  font-family: "lato-bold";
+}
+
+.inline-link {
+  font-family: "lato-black";
+  text-decoration: none;
+  color: inherit;
+}
+
 .nav-item {
   font-family: "lato-regular";
   color: #ffffff;
-  // font-size: 14px;
+  font-size: 14px;
   text-decoration: none;
   text-transform: uppercase;
   @media #{$breakpoint-large} {
-    font-size: 22px;
+    font-size: 18px;
   }
 }
 
@@ -91,10 +101,39 @@ p, li {
   }
 }
 
-.inline-link {
+.hero-subtitle {
+  font-family: "lato-light";
+  font-size: 18px;
+  color: #ffffff;
+  line-height: 28px;
+  @media #{$breakpoint-xlarge} {
+    font-size: 28px;
+    line-height: 36px;
+  }
+}
+
+.project-title {
   font-family: "lato-black";
-  text-decoration: none;
-  color: inherit;
+  color: #ffffff;
+  @media #{$breakpoint-large} {
+    font-size: 24px;
+  }
+  @media #{$breakpoint-xlarge} {
+    font-size: 36px;
+  }
+}
+
+.project-subtitle {
+  font-family: "lato-regular";
+  font-size: 14px;
+  text-transform: uppercase;
+  color: #ffffff;
+  @media #{$breakpoint-large} {
+    font-size: 10px;
+  }
+  @media #{$breakpoint-xlarge} {
+    font-size: 14px;
+  }
 }
 
 .title {
@@ -113,21 +152,17 @@ p, li {
   }
 }
 
-.project-subtitle {
-  font-family: "lato-regular";
-  color: #999999;
-  font-size: 15px;
-  @media #{$breakpoint-large} {
-    font-size: 19px;
-  }
-  @media #{$breakpoint-xlarge} {
-    font-size: 24px;
-  }
-}
-
-.bold {
-  font-family: "lato-bold";
-}
+// .project-subtitle {
+//   font-family: "lato-regular";
+//   color: #999999;
+//   font-size: 15px;
+//   @media #{$breakpoint-large} {
+//     font-size: 19px;
+//   }
+//   @media #{$breakpoint-xlarge} {
+//     font-size: 24px;
+//   }
+// }
 
 .circle-brand-title {
   font-family: "lato-regular";

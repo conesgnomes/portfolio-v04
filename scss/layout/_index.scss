@@ -1,117 +1,93 @@
 .index {
-  // background-color: green;
   height: 100%;
-}
-.index-header {
-  position: absolute;
-  padding-top: 40px;
-  padding-left: 40px;
-  padding-right: 40px;
-  display: flex;
-  justify-content: space-between;
-  background-image: linear-gradient(rgba(28,33,36,100), rgba(28,33,36,0));
-  height: 50vh;
-  .title-subtitle {
-    width: 60%;
-    .hero-subtitle {
-      font-family: "lato-light";
-      font-size: 22px;
-      color: #ffffff;
-      line-height: 36px;
-      margin-top: 10px;
-      @media #{$breakpoint-large} {
-        font-size: 24px;
-      }
-      @media #{$breakpoint-xlarge} {
-        font-size: 28px;
+  .index-header {
+    position: absolute;
+    padding-top: 40px;
+    padding-left: 40px;
+    padding-right: 40px;
+    display: flex;
+    justify-content: space-between;
+    background-image: linear-gradient(rgba(28,33,36,100), rgba(28,33,36,0));
+    height: 50vh;
+    .hero-copy {
+      width: 60%;
+      .hero-subtitle {
+        margin-top: 10px;
       }
     }
-  }
-  nav {
-    display: flex;
-    flex-direction: column;
-    .navigation {
+    nav {
       display: flex;
-      flex-direction: row;
-      li {
-        list-style: none;
-        .nav-item {
-          margin-left: 30px;
+      flex-direction: column;
+      .navigation {
+        display: flex;
+        flex-direction: row;
+        li {
+          list-style: none;
+          .nav-item {
+            margin-left: 30px;
+          }
+        }
+      }
+      .social-icons {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        justify-content: center;
+        .social-item {
+          margin-top: 30px;
         }
       }
     }
-    .social-icons {
-      display: flex;
-      flex-direction: column;
-      align-items: flex-end;
-      justify-content: center;
-      .social-item {
-        margin-top: 30px;
-      }
-    }
   }
-}
-.index-body {
-  .project-group {
-    display: flex;
-    justify-content: space-between;
-    .project-one {
-      background-image: url("../../img/GDS-landing-background.png"), linear-gradient(45deg, rgba(171,209,219,100), rgba(114,164,180,100));
-      background-position: center 40vh, top right;
-      background-size: cover;
-      background-repeat: no-repeat;
-    }
-    .project-two {
-      background-image: url("../../img/booth-landing-background.png"), linear-gradient(45deg, rgba(146,147,83,100), rgba(235,238,152,100));
-      background-position: center 40vh, top right;
-      background-size: 120%;
-      background-repeat: no-repeat;
-    }
-    .project-three {
-      background-image: url("../../img/daily-landing-background.png"), linear-gradient(45deg, rgba(228,143,186,100), rgba(164,79,122,100));
-      background-position: center 40vh, top right;
-      background-size: 150%;
-      background-repeat: no-repeat;
-    }
-    .project {
-      top: 0;
-      bottom: 0;
-      left: 0;
-      right: 0;
-      overflow: hidden;
-      width: 32.5%;
-      height: 100vh;
+  .index-body {
+    .project-group {
       display: flex;
-      justify-content: center;
-      align-items: baseline;
-      .project-label {
-        background-color: #1C2124;
-        box-shadow: 0px 0px 30px rgba(0,0,0,50);
-        border-radius: 4px;
-        width: 70%;
-        position: relative;
-        top: 65vh;
-        .project-label-copy {
-          padding: 20px 60px 20px 20px;
-          .project-subtitle {
-            font-family: "lato-regular";
-            font-size: 14px;
-            text-transform: uppercase;
-            color: #ffffff;
-          }
-          .project-title {
-            font-family: "lato-black";
-            color: #ffffff;
-            @media #{$breakpoint-medium} {
-              font-size: 28px;
+      justify-content: space-between;
+      .project-one {
+        @include project-card(url("../../img/GDS-landing-background.png"), rgba(171,209,219,100), rgba(114,164,180,100), 40vh, cover);
+      }
+      .project-two {
+        @include project-card(url("../../img/booth-landing-background.png"), rgba(146,147,83,100), rgba(235,238,152,100), 40vh, cover);
+      }
+      .project-three {
+        @include project-card(url("../../img/daily-landing-background.png"), rgba(228,143,186,100), rgba(164,79,122,100), 40vh, 150%);
+      }
+      .project {
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        overflow: hidden;
+        width: 32.5%;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: baseline;
+        .project-label {
+          background-color: #1C2124;
+          box-shadow: 0px 0px 30px rgba(0,0,0,50);
+          border-radius: 4px;
+          width: 70%;
+          position: relative;
+          top: 65vh;
+          .project-label-copy {
+            padding: 20px 40px 20px 20px;
+            @media #{"only screen and (min-width: 1059px)"} {
+              padding-right: 20px;
+            }
+            @media #{"only screen and (min-width: 1162px)"} {
+              padding-right: 80px;
+            }
+            @media #{"only screen and (min-width: 1322px)"} {
+              padding-right: 100px;
             }
             @media #{$breakpoint-xlarge} {
-              font-size: 36px;
+              padding-right: 20px;
             }
-          }
-          .button-container {
-            padding-top: 25px;
-            @include cta-button(#ffffff);
+            .button-container {
+              padding-top: 25px;
+              @include cta-button(#ffffff);
+            }
           }
         }
       }
