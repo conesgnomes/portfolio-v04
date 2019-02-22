@@ -65,13 +65,38 @@
             top: 0;
             position: inline;
           }
+          .nav-item {
+            @media #{$breakpoint-large} {
+              display: flex;
+              position: relative;
+              text-decoration: none;
+              width: auto;
+              overflow: hidden;
+              &:before, &:after {
+                content: '';
+                position: absolute;
+                transition: transform .3s ease-in;
+              }
+              &:before {
+                left: 0;
+                bottom: 0;
+                width: 100%;
+                height: 2px;
+                background-color: #ffffff;
+                transform: translateX(-100%);
+              }
+              &:hover:before {
+                transform: translateX(0);
+              }
+            }
+          }
           .nav-two {
-            padding: 0 30px;
+            margin: 0 30px;
             @media #{$breakpoint-medium} {
-              padding: 0 20px;
+              margin: 0 20px;
             }
             @media #{$breakpoint-large} {
-              padding: 30px;
+              margin: 0 30px;
             }
           }
         }
