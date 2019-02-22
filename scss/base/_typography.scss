@@ -85,7 +85,7 @@ p, li {
   color: #ffffff;
   font-size: 14px;
   text-decoration: none;
-  text-transform: uppercase;
+  // text-transform: uppercase;
   @media #{$breakpoint-large} {
     font-size: 18px;
   }
@@ -95,9 +95,6 @@ p, li {
   a {
     font-size: 30px;
     color: #ffffff;
-    @media #{$breakpoint-large} {
-      // font-size: 30px;
-    }
   }
 }
 
@@ -115,8 +112,9 @@ p, li {
 .project-title {
   font-family: "lato-black";
   color: #ffffff;
-  @media #{$breakpoint-large} {
-    font-size: 24px;
+  font-size: 22px;
+  @media #{$breakpoint-medium} {
+    font-size: 28px;
   }
   @media #{$breakpoint-xlarge} {
     font-size: 36px;
@@ -125,15 +123,15 @@ p, li {
 
 .project-subtitle {
   font-family: "lato-regular";
-  font-size: 14px;
+  font-size: 10px;
   text-transform: uppercase;
   color: #ffffff;
-  @media #{$breakpoint-large} {
-    font-size: 10px;
-  }
-  @media #{$breakpoint-xlarge} {
+  @media #{$breakpoint-medium} {
     font-size: 14px;
   }
+  // @media #{$breakpoint-xlarge} {
+  //   font-size: 14px;
+  // }
 }
 
 .title {
