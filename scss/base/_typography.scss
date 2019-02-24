@@ -75,34 +75,30 @@ p, li {
 }
 
 .inline-link {
-  font-family: "lato-black";
-  text-decoration: none;
-  color: inherit;
+  @include link (rgba(255,255,255,0.5), 95%);
 }
 
 .nav-item {
-  font-family: "lato-regular";
+  font-family: "lato-light";
   color: #ffffff;
-  font-size: 14px;
+  font-size: 18px;
+  line-height: 28px;
   text-decoration: none;
-  // text-transform: uppercase;
   @media #{$breakpoint-large} {
     font-size: 18px;
   }
 }
 
-.social-icons {
-  a {
+.social-item {
     font-size: 30px;
     color: #ffffff;
   }
-}
 
 .hero-subtitle {
   font-family: "lato-light";
   font-size: 18px;
-  color: #ffffff;
   line-height: 28px;
+  color: #ffffff;
   @media #{$breakpoint-xlarge} {
     font-size: 28px;
     line-height: 36px;
@@ -129,9 +125,6 @@ p, li {
   @media #{$breakpoint-medium} {
     font-size: 14px;
   }
-  // @media #{$breakpoint-xlarge} {
-  //   font-size: 14px;
-  // }
 }
 
 .title {

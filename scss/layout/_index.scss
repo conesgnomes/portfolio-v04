@@ -34,6 +34,10 @@
       }
       .hero-subtitle {
         padding-top: 50px;
+        position: relative;
+      	z-index: 1; /* needed for setting pseudo-element z-index */
+      	overflow: hidden;
+      	backface-visibility: hidden;
         @media #{$breakpoint-medium} {
           padding-top: 10px;
         }
@@ -64,31 +68,6 @@
           @media #{$breakpoint-medium} {
             top: 0;
             position: inline;
-          }
-          .nav-item {
-            @media #{$breakpoint-large} {
-              display: flex;
-              position: relative;
-              text-decoration: none;
-              width: auto;
-              overflow: hidden;
-              &:before, &:after {
-                content: '';
-                position: absolute;
-                transition: transform .3s ease-in;
-              }
-              &:before {
-                left: 0;
-                bottom: 0;
-                width: 100%;
-                height: 2px;
-                background-color: #ffffff;
-                transform: translateX(-100%);
-              }
-              &:hover:before {
-                transform: translateX(0);
-              }
-            }
           }
           .nav-two {
             margin: 0 30px;
@@ -227,10 +206,14 @@
             }
             .button-container {
               padding-top: 15px;
+              position: relative;
+            	z-index: 1; /* needed for setting pseudo-element z-index */
+            	overflow: hidden;
+            	backface-visibility: hidden;
+              @include new-cta-button(rgba(255,255,255,1), #ffffff);
               @media #{$breakpoint-medium} {
                 padding-top: 25px;
               }
-              @include cta-button(#ffffff);
             }
           }
         }
