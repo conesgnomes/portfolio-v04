@@ -45,7 +45,7 @@ h3 {
 
 h4 {
   font-family: "lato-regular";
-  color: #ffffff;
+  color: $blue-grey;
   font-size: 10px;
   text-transform: uppercase;
   @media #{$breakpoint-large} {
@@ -80,7 +80,7 @@ p, li {
 
 .nav-item {
   font-family: "lato-light";
-  // color: #ffffff;
+  color: #ffffff;
   font-size: 18px;
   line-height: 28px;
   text-decoration: none;
