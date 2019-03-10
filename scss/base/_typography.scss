@@ -3,6 +3,7 @@
 h1, h2, h3, h4, h5, h6, p, ul, a {
   margin: 0;
   padding: 0;
+  color: $blue-grey;
 }
 
 h1 {
@@ -21,25 +22,18 @@ h1 {
 h2 {
   font-family: "lato-black";
   font-size: 28px;
+  text-transform: uppercase;
   @media #{$breakpoint-large} {
-    font-size: 32px;
-  }
-  @media #{$breakpoint-xlarge} {
-    font-size: 40px;
+    font-size: 48px;
   }
 }
 
 h3 {
-  font-family: "lato-regular";
+  font-family: "lato-black";
   font-size: 16px;
   line-height: 24px;
   @media #{$breakpoint-large} {
-    font-size: 18px;
-    line-height: 28px;
-  }
-  @media #{$breakpoint-xlarge} {
-    font-size: 20px;
-    line-height: 35px;
+    font-size: 28px;
   }
 }
 
@@ -47,13 +41,13 @@ h4 {
   font-family: "lato-regular";
   color: $blue-grey;
   font-size: 10px;
-  text-transform: uppercase;
   @media #{$breakpoint-large} {
-    font-size: 12px;
+    font-size: 24px;
+    line-height: 35px;
   }
-  @media #{$breakpoint-xlarge} {
-    font-size: 14px;
-  }
+  // @media #{$breakpoint-xlarge} {
+  //   font-size: 14px;
+  // }
 }
 
 p, li {
@@ -61,12 +55,8 @@ p, li {
   font-size: 14px;
   line-height: 19px;
   @media #{$breakpoint-large} {
-    font-size: 15px;
-    line-height: 20px;
-  }
-  @media #{$breakpoint-xlarge} {
-    font-size: 16px;
-    line-height: 22px;
+    font-size: 18px;
+    line-height: 28px;
   }
 }
 
