@@ -45,9 +45,9 @@ h4 {
     font-size: 24px;
     line-height: 35px;
   }
-  // @media #{$breakpoint-xlarge} {
-  //   font-size: 14px;
-  // }
+  @media #{$breakpoint-xlarge} {
+    font-size: 14px;
+  }
 }
 
 p, li {
@@ -100,10 +100,10 @@ p, li {
   color: #ffffff;
   font-size: 22px;
   @media #{$breakpoint-medium} {
-    font-size: 28px;
+    // font-size: 24px;
   }
   @media #{$breakpoint-xlarge} {
-    font-size: 36px;
+    font-size: 32px;
   }
 }
 
@@ -113,7 +113,7 @@ p, li {
   text-transform: uppercase;
   color: #ffffff;
   @media #{$breakpoint-medium} {
-    font-size: 14px;
+    font-size: 12px;
   }
 }
 

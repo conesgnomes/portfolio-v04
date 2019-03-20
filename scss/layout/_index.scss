@@ -38,6 +38,8 @@
       	z-index: 1; /* needed for setting pseudo-element z-index */
       	overflow: hidden;
       	backface-visibility: hidden;
+        text-transform: none;
+        color: #ffffff;
         @media #{$breakpoint-medium} {
           padding-top: 10px;
         }
