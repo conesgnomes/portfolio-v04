@@ -64,10 +64,6 @@ p, li {
   font-family: "lato-bold";
 }
 
-.inline-link {
-  @include link (rgba(255,255,255,0.5), 95%);
-}
-
 .nav-item {
   font-family: "lato-light";
   color: #ffffff;

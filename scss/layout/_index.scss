@@ -43,6 +43,9 @@
         @media #{$breakpoint-medium} {
           padding-top: 10px;
         }
+        .inline-link {
+          @include link(#ffffff, rgba(255,255,255,0.5), 95%);
+        }
       }
     }
     nav {
@@ -201,7 +204,7 @@
               padding-right: 50px;
             }
             @media #{"only screen and (min-width: 1338px)"} {
-              padding-right: 70px;
+              padding-right: 80px;
             }
             @media #{$breakpoint-xlarge} {
               padding-right: 20px;

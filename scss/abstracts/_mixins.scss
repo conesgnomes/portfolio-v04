@@ -5,7 +5,7 @@
   background-repeat: no-repeat;
 }
 
-@mixin link($hover-color, $translate-y) {
+@mixin link($font-color, $hover-color, $translate-y) {
   color: inherit;
   outline: none;
   text-decoration: none;
@@ -13,7 +13,7 @@
   position: relative;
   display: inline-block;
   vertical-align: bottom;
-	color: #ffffff;
+	color: $font-color;
   overflow: hidden;
   &:before,
   &:after {
@@ -41,7 +41,7 @@
 
 @mixin new-cta-button($border-color, $button-color) {
   .btn {
-    @include link(rgba(255,255,255,1), 100%);
+    @include link(#ffffff, rgba(255,255,255,1), 100%);
     font-family: "lato-black";
     text-transform: uppercase;
     border: 2px solid $border-color;
@@ -79,7 +79,7 @@
 }
 @mixin cta-button($button-color) { // this is the old one
   .btn {
-    @include link(rgba(255,255,255,1), 100%);
+    @include link(#ffffff, rgba(255,255,255,1), 100%);
     font-family: "lato-black";
     text-transform: uppercase;
     // border-radius: 100px;
