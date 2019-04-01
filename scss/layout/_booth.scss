@@ -20,8 +20,8 @@
   display: flex;
   align-items: flex-start;
   justify-content: space-between;
-  background-image: linear-gradient(45deg, rgba(171,209,219,100), rgba(114,164,180,100));
-  box-shadow: 0px 0px 30px rgba(0,0,0,50);
+  background-image: linear-gradient(45deg, #EBEE98, #C24176);
+  box-shadow: 0px 0px 30px rgba(0,0,0,0.5);
   @media #{$breakpoint-large} {
     padding: 40px;
   }
@@ -71,7 +71,10 @@
   .page-navigation {
     display: none;
     @media #{$breakpoint-large} {
+      background-color: #ffffff;
+      padding: 20px 40px;
       position: fixed;
+      z-index: 100;
       display: flex;
       flex-direction: column;
       align-items: flex-end;
@@ -154,6 +157,83 @@
     .components-section,
     .next-section {
       margin-top: 60px;
+    }
+    .overview-section {
+      .booth-desktop-mobile {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        img {
+          width: 80%;
+        }
+      }
+      .research-pics {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        margin: 30px 0 60px 0;
+        img {
+          width: 30%;
+          object-fit: contain;
+          box-shadow: 0 0 30px 0 rgba(0,0,0,0.5);
+        }
+      }
+      .mockup-group {
+        position: relative;
+        width: 200vw;
+        left: -40%;
+        background-image: linear-gradient(45deg, #EBEE98, #C24176);
+        background-size: cover;
+        img {
+          height: 400px;
+        }
+      }
+    }
+    .design-section {
+      .booth-sitemap {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 30px 0 50px 0;
+        img {
+          width: 80%;
+        }
+      }
+      .wireframe-group {
+        position: relative;
+        background-image: linear-gradient(45deg, #EBEE98, #C24176);
+        width: 100vw;
+        background-size: cover;
+        left: -29%;
+        overflow: hidden;
+        margin: 30px 0 50px 0;
+        .wireframe-group-positioning {
+          position: relative;
+          left: -100px;
+          img {
+            height: 300px;
+            padding-bottom: 15px;
+          }
+        }
+      }
+      .mockup-group {
+        position: relative;
+        background-image: linear-gradient(45deg, #EBEE98, #C24176);
+        width: 100vw;
+        background-size: cover;
+        left: -29%;
+        overflow: hidden;
+        margin: 30px 0 50px 0;
+        .mockup-group-positioning {
+          position: relative;
+          left: -100px;
+          img {
+            height: 400px;
+            padding-bottom: 25px;
+          }
+        }
+      }
     }
   }
 }

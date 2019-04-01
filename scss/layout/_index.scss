@@ -126,12 +126,12 @@
         }
       }
       .project-two {
-        @include project-card(url("../../img/booth-landing-background.png"), rgba(146,147,83,100), rgba(235,238,152,100), 230px, -20px, 100%);
+        @include project-card(url("../../img/booth-landing-background.png"), rgba(194,65,118,100), rgba(235,238,152,100), 230px, -20px, 100%);
         @media #{$breakpoint-medium} {
-          @include project-card(url("../../img/booth-landing-background.png"), rgba(146,147,83,100), rgba(235,238,152,100), 300px, -80px, 100%);
+          @include project-card(url("../../img/booth-landing-background.png"), rgba(194,65,118,100), rgba(235,238,152,100), 300px, -80px, 100%);
         }
         @media #{$breakpoint-large} {
-          @include project-card(url("../../img/booth-landing-background.png"), rgba(146,147,83,100), rgba(235,238,152,100), center, 35vh, cover);
+          @include project-card(url("../../img/booth-landing-background.png"), rgba(194,65,118,100), rgba(235,238,152,100), center, 35vh, cover);
         }
       }
       .project-three {
