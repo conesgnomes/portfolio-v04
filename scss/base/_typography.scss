@@ -8,7 +8,7 @@ h1, h2, h3, h4, h5, h6, p, ul, a {
 
 h1 {
   font-family: "lato-black";
-  font-size: 30px;
+  font-size: 36px;
   color: #ffffff;
   text-transform: uppercase;
   @media #{$breakpoint-large} {
@@ -22,7 +22,6 @@ h1 {
 h2 {
   font-family: "lato-black";
   font-size: 28px;
-  // text-transform: uppercase;
   @media #{$breakpoint-large} {
     font-size: 48px;
   }
@@ -30,7 +29,7 @@ h2 {
 
 h3 {
   font-family: "lato-black";
-  font-size: 16px;
+  font-size: 20px;
   line-height: 24px;
   @media #{$breakpoint-large} {
     font-size: 28px;
@@ -40,20 +39,18 @@ h3 {
 h4 {
   font-family: "lato-regular";
   color: $blue-grey;
-  font-size: 10px;
+  font-size: 18px;
+  line-height: 26px;
   @media #{$breakpoint-large} {
     font-size: 24px;
     line-height: 35px;
-  }
-  @media #{$breakpoint-xlarge} {
-    font-size: 14px;
   }
 }
 
 p, li {
   font-family: "lato-regular";
-  font-size: 14px;
-  line-height: 19px;
+  font-size: 16px;
+  line-height: 20px;
   @media #{$breakpoint-large} {
     font-size: 18px;
     line-height: 28px;
