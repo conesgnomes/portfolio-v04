@@ -22,18 +22,20 @@
   <main id="swup" class="transition-fade">
     <body>
       <header class="gds-header">
-        <div class="page-hero">
-          <h1>Giant Design System</h1>
+        <div class="nav-bar">
+          <div class="page-hero">
+            <h1>Giant Design System</h1>
+          </div>
+          <nav class="page-nav">
+            <ul class="navigation">
+              <li><a class="nav-item nav-one" href="index.html">projects</a></li>
+              <li><a class="nav-item nav-two" href="bio.html">bio</a></li>
+              <li><a class="nav-item nav-three" target="_blank" href="https://www.dropbox.com/s/0vokc1do3ko29n5/Larsen_Resume.pdf?dl=0">resumé</a></li>
+            </ul>
+          </nav>
         </div>
-        <nav class="page-nav">
-          <ul class="navigation">
-            <li><a class="nav-item nav-one" href="index.html">projects</a></li>
-            <li><a class="nav-item nav-two" href="bio.html">bio</a></li>
-            <li><a class="nav-item nav-three" target="_blank" href="https://www.dropbox.com/s/0vokc1do3ko29n5/Larsen_Resume.pdf?dl=0">resumé</a></li>
-          </ul>
-        </nav>
       </header>
-      <div class="page">
+      <div class="gds-page">
         <div class="page-navigation">
           <a href="#overview-anchor" class="page-section page-section-one">Overview</a>
           <a href="#components-anchor" class="page-section page-section-two">Components</a>
@@ -44,12 +46,18 @@
             <div id="overview-anchor"></div>
             <h2>Overview</h2>
             <h4>A project I was tasked with while working at <a class="inline-link" target="_blank" href="https://www.evokegiant.com/">Evoke Giant</a>, a health-focused advertising and strategic branding agency located in San Francisco,  was helping to create a design system that could be used as a jumping off point for all of the agency’s digital projects.  This system would consist of the most common components used in healthcare digital projects, allowing the creative teams at Giant to focus their efforts on bringing their clients’ brands to life visually without the need to reinvent many of the universal elements found across  the digital landscape.</h4>
-            <img src="" alt="Component examples from the Giant Design System">
+            <div class="gds-components-group">
+              <div class="gds-components-position">
+                <img src="img/gds-components.png" alt="Row of components within the Giant Design System">
+              </div>
+            </div>
             <h3 class="paragraph-header">Problem</h3>
             <p class="paragraph-copy">Evoke Giant  was looking for guidance in best practices when designing for digital projects (specifically websites, banner ads, and email blasts) to ensure industry standard design solutions were being utilized. It would allow their art teams to focus their energy on creative concepting and bringing their client’s brands to life without the need to worry about usability heuristics and web design standards.</p>
             <h3 class="paragraph-header">Solution</h3>
             <p class="paragraph-copy">I created what I’ve called the Giant Design System — or GDS. It’s a library of the most common design components used in healthcare websites assembled using <a class="inline-link" target="_blank" href="http://bradfrost.com/blog/post/atomic-web-design/">Brad Frost’s Atomic Design Methodology</a> that are reusable across many of the digital projects at Evoke Giant.  It’s designed in such a way that allows the agency’s art teams to mix and match the elements they need to come up with new creative solutions for their client’s digital problems. Each component can be visually personalized to meet the client’s brand needs, while the underlying functionality stays the same.</p>
-            <img src="img/gds-atomic-design.png" alt="Atomic Design Methodology in the Giant Design System">
+            <div class="gds-atomic-design">
+              <img src="img/gds-atomic-design.png" alt="Atomic Design Methodology in the Giant Design System">
+            </div>
             <h3 class="paragaph-header">Team and Role</h3>
             <ul>
               <li>Lead designer — myself</li>
@@ -58,11 +66,11 @@
               <li>VP of Technology — Andrew Wint</li>
               <li>Front end development team — Tony Le and John Vihikite</li>
             </ul>
-            <div class="research-pics">
+            <!-- <div class="research-pics">
               <img src="" alt="Photo of research happening">
               <img src="" alt="Photo of research happening">
               <img src="" alt="Photo of research happening">
-            </div>
+            </div> -->
             <h3 class="paragraph-header">Research</h3>
             <p class="paragraph-copy">I completed an analysis of design elements currently used in pharmaceutical and medical device websites, emails, and banner ads, both those done by Evoke Giant, as well as brands worked on by competitor agencies, to establish list of components to include in the Giant Design System. I also worked closely with our UX Strategist and Director of UX to focus the list of components needed for the initial launch of GDS.</p>
           </div>
@@ -72,17 +80,25 @@
             <h4>I completed an analysis of design elements currently used in pharmaceutical and medical device websites, emails, and banner ads, both those done by Evoke Giant, as well as brands worked on by competitor agencies, to establish list of components to include in the Giant Design System. I also worked closely with our UX Strategist and Director of UX to focus the list of components needed for the initial launch of GDS.</h4>
             <h3 class="paragraph-header">Typography</h3>
             <p class="paragraph-copy">I established a typographic heirarchy  for the GDS that could be used across any project. It provides an example of appropriate type sizing, agnostic of typeface, font weight, and case.</p>
-            <img src="img/gds-typography-desktop.png" alt="Photo of desktop typography within the Giant Design System">
-            <img src="img/gds-typography-mobile.png" alt="Photo of mobile typography within the Giant Design System">
+            <div class="gds-typography-group">
+              <img src="img/gds-typography-desktop.png" alt="Photo of desktop typography within the Giant Design System">
+              <img src="img/gds-typography-mobile.png" alt="Photo of mobile typography within the Giant Design System">
+            </div>
             <h3 class="paragraph-header">Color</h3>
             <p class="paragraph-copy">I created a color palette to be used for the GDS that expands upon Evoke Giant’s corporate colors. It’s meant to serve as an example for color selection and will obviously be replaced by a client’s own brand colors.</p>
-            <img src="img/gds-colors.png" alt="Photo of color palette within the Giant Design System">
+            <div class="gds-colors">
+              <img src="img/gds-colors.png" alt="Photo of color palette within the Giant Design System">
+            </div>
             <h3 class="paragraph-header">Page Elements</h3>
             <p class="paragraph-copy">The beauty of the Giant Design System is its modular nature. In true atomic design fashion, each element can combined with other elements to create full page designs.</p>
-            <img src="img/gds-components.png" alt="Row of components within the Giant Design System">
-            <h3 class="paragraph-header">Interactivity</h3>
+            <div class="gds-component-layouts-group">
+              <div class="gds-component-layouts-positioning">
+                <img src="img/gds-component-layouts.png" alt="Row of components within the Giant Design System">
+              </div>
+            </div>
+            <!-- <h3 class="paragraph-header">Interactivity</h3>
             <p class="paragraph-copy">I ensured to include hover, active, and other interactive states into the design system.</p>
-            <img src="" alt="GIF of interactive elements">
+            <img src="" alt="GIF of interactive elements"> -->
           </div>
           <div class="section next-section">
             <div id="next-anchor"></div>
@@ -93,7 +109,7 @@
             <h3 class="paragraph-header">Translation into Code</h3>
             <p class="paragraph-copy">I have begun working with our development team to translate the design system's elements into coded components in our agency’s React codebase. Having the functionality and layout of each component coded out ahead of time will save the dev team massive amounts of time when building new projects since they simply need to adjust the styling of each component as opposed to building it from scratch. This is ultimately one of the greatest benefits of having a design system in place - not needing to reinvent the wheel and start development from scratch with every project.</p>
             <h3 class="paragraph-header">Incorporate Usage Rules</h3>
-            <p class="paragraph-copy">Fill this in</p>
+            <p class="paragraph-copy">Creating the usage documentation for the design system is needed next. This will ensure that anyone looking to borrow elements from the system incorporates them correctly into their designs.</p>
           </div>
         </div>
       </div>
