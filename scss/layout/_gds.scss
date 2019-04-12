@@ -17,7 +17,7 @@
 // --------------------------
 
 .gds-header {
-  background-image: linear-gradient(45deg, rgba(171,209,219,100), rgba(114,164,180,100));
+  background-image: linear-gradient(45deg, rgba(67,133,155,100), rgba(110,206,178,100));
   .nav-bar {
     display: flex;
     flex-direction: column;
@@ -167,8 +167,19 @@
       margin-top: 60px;
     }
     .overview-section {
+      .gds-atomic-design {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        img {
+          width: 100%;
+          @media #{$breakpoint-medium} {
+            width: 100%;
+          }
+        }
+      }
       .gds-components-group {
-        background-image: linear-gradient(45deg, rgba(171,209,219,100), rgba(114,164,180,100));
+        background-image: linear-gradient(45deg, rgba(67,133,155,100), rgba(110,206,178,100));
         width: 100vw;
         background-size: cover;
         position: relative;
@@ -196,27 +207,6 @@
           }
         }
       }
-      .gds-atomic-design {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        img {
-          width: 100%;
-          @media #{$breakpoint-medium} {
-            width: 100%;
-          }
-        }
-      }
-      // .mockup-group {
-      //   position: relative;
-      //   width: 200vw;
-      //   left: -40%;
-      //   background-image: linear-gradient(45deg, #EBEE98, #C24176);
-      //   background-size: cover;
-      //   img {
-      //     height: 400px;
-      //   }
-      // }
     }
     .components-section {
       .gds-typography-group {
@@ -257,7 +247,7 @@
         }
       }
       .gds-component-layouts-group {
-        background-image: linear-gradient(45deg, rgba(171,209,219,100), rgba(114,164,180,100));
+        background-image: linear-gradient(45deg, rgba(67,133,155,100), rgba(110,206,178,100));
         width: 100vw;
         background-size: cover;
         position: relative;

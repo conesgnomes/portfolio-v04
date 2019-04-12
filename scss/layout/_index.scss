@@ -117,12 +117,12 @@
         justify-content: space-between;
       }
       .project-one {
-        @include project-card(url("../../img/GDS-landing-background.png"), rgba(171,209,219,100), rgba(114,164,180,100), 200px, -50px, 100%);
+        @include project-card(url("../../img/GDS-landing-background.png"), rgba(67,133,155,100), rgba(110,206,178,100), 200px, -50px, 100%);
         @media #{$breakpoint-medium} {
-          @include project-card(url("../../img/GDS-landing-background.png"), rgba(171,209,219,100), rgba(114,164,180,100), 300px, -80px, 100%);
+          @include project-card(url("../../img/GDS-landing-background.png"), rgba(67,133,155,100), rgba(110,206,178,100), 300px, -80px, 100%);
         }
         @media #{$breakpoint-large} {
-          @include project-card(url("../../img/GDS-landing-background.png"), rgba(171,209,219,100), rgba(114,164,180,100), center, 35vh, cover);
+          @include project-card(url("../../img/GDS-landing-background.png"), rgba(67,133,155,100), rgba(110,206,178,100), center, 35vh, cover);
         }
       }
       .project-two {
