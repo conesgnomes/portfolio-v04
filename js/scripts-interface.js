@@ -131,6 +131,116 @@ $(document).ready(function () {
   });
 });
 
+// Daily UI
+
+$(document).ready(function () {
+  var scroll_pos = 0;
+  $(".ui-section-one").css({'background-color': '#1C2124', 'padding': '15px', 'border-radius': '4px', 'color': '#ffffff', 'margin-top': '0', 'box-shadow': '0px 0px 30px rgba(0,0,0,50)', 'z-index': '100'});
+  $(".ui-section-two").css({'background-color': '#ffffff', 'padding': '15px', 'border-radius': '4px', 'color': '#1C2124', 'margin-top': '0', 'box-shadow': 'none', 'z-index': '-100'});
+  $(".ui-section-three").css({'background-color': '#ffffff', 'padding': '15px', 'border-radius': '4px', 'color': '#1C2124', 'margin-top': '0', 'box-shadow': 'none', 'z-index': '-100'});
+  $(".ui-section-four").css({'background-color': '#ffffff', 'padding': '15px', 'border-radius': '4px', 'color': '#1C2124', 'margin-top': '0', 'box-shadow': 'none', 'z-index': '-100'});
+  $(".ui-section-five").css({'background-color': '#ffffff', 'padding': '15px', 'border-radius': '4px', 'color': '#1C2124', 'margin-top': '0', 'box-shadow': 'none', 'z-index': '-100'});
+  $(".ui-section-six").css({'background-color': '#ffffff', 'padding': '15px', 'border-radius': '4px', 'color': '#1C2124', 'margin-top': '0', 'box-shadow': 'none', 'z-index': '-100'});
+  $(".ui-section-seven").css({'background-color': '#ffffff', 'padding': '15px', 'border-radius': '4px', 'color': '#1C2124', 'margin-top': '0', 'box-shadow': 'none', 'z-index': '-100'});
+  $(".ui-section-eight").css({'background-color': '#ffffff', 'padding': '15px', 'border-radius': '4px', 'color': '#1C2124', 'margin-top': '0', 'box-shadow': 'none', 'z-index': '-100'});
+  $(".ui-section-nine").css({'background-color': '#ffffff', 'padding': '15px', 'border-radius': '4px', 'color': '#1C2124', 'margin-top': '0', 'box-shadow': 'none', 'z-index': '-100'});
+  $(document).scroll(function () {
+      scroll_pos = $(this).scrollTop();
+      if (scroll_pos >= 0 && scroll_pos < 962) {
+        $(".ui-section-one").css({'background-color': '#ffffff', 'padding': '15px', 'border-radius': '4px', 'color': '#1C2124', 'margin-top': '0', 'box-shadow': 'none', 'z-index': '-100'});
+        $(".ui-section-two").css({'background-color': '#1C2124', 'padding': '15px', 'border-radius': '4px', 'color': '#ffffff', 'margin-top': '0' , 'box-shadow': '0px 0px 30px rgba(0,0,0,50)', 'z-index': '100'});
+        $(".ui-section-three").css({'background-color': '#ffffff', 'padding': '15px', 'border-radius': '4px', 'color': '#1C2124', 'margin-top': '0', 'box-shadow': 'none', 'z-index': '-100'});
+        $(".ui-section-four").css({'background-color': '#ffffff', 'padding': '15px', 'border-radius': '4px', 'color': '#1C2124', 'margin-top': '0', 'box-shadow': 'none', 'z-index': '-100'});
+        $(".ui-section-five").css({'background-color': '#ffffff', 'padding': '15px', 'border-radius': '4px', 'color': '#1C2124', 'margin-top': '0', 'box-shadow': 'none', 'z-index': '-100'});
+        $(".ui-section-six").css({'background-color': '#ffffff', 'padding': '15px', 'border-radius': '4px', 'color': '#1C2124', 'margin-top': '0', 'box-shadow': 'none', 'z-index': '-100'});
+        $(".ui-section-seven").css({'background-color': '#ffffff', 'padding': '15px', 'border-radius': '4px', 'color': '#1C2124', 'margin-top': '0', 'box-shadow': 'none', 'z-index': '-100'});
+        $(".ui-section-eight").css({'background-color': '#ffffff', 'padding': '15px', 'border-radius': '4px', 'color': '#1C2124', 'margin-top': '0', 'box-shadow': 'none', 'z-index': '-100'});
+        $(".ui-section-nine").css({'background-color': '#ffffff', 'padding': '15px', 'border-radius': '4px', 'color': '#1C2124', 'margin-top': '0', 'box-shadow': 'none', 'z-index': '-100'});
+      } else if (scroll_pos > 960 && scroll_pos < 1542) {
+        $(".ui-section-one").css({'background-color': '#ffffff', 'padding': '15px', 'border-radius': '4px', 'color': '#1C2124', 'margin-top': '0', 'box-shadow': 'none', 'z-index': '-100'});
+        $(".ui-section-two").css({'background-color': '#1C2124', 'padding': '15px', 'border-radius': '4px', 'color': '#ffffff', 'margin-top': '0' , 'box-shadow': '0px 0px 30px rgba(0,0,0,50)', 'z-index': '100'});
+        $(".ui-section-three").css({'background-color': '#ffffff', 'padding': '15px', 'border-radius': '4px', 'color': '#1C2124', 'margin-top': '0', 'box-shadow': 'none', 'z-index': '-100'});
+        $(".ui-section-four").css({'background-color': '#ffffff', 'padding': '15px', 'border-radius': '4px', 'color': '#1C2124', 'margin-top': '0', 'box-shadow': 'none', 'z-index': '-100'});
+        $(".ui-section-five").css({'background-color': '#ffffff', 'padding': '15px', 'border-radius': '4px', 'color': '#1C2124', 'margin-top': '0', 'box-shadow': 'none', 'z-index': '-100'});
+        $(".ui-section-six").css({'background-color': '#ffffff', 'padding': '15px', 'border-radius': '4px', 'color': '#1C2124', 'margin-top': '0', 'box-shadow': 'none', 'z-index': '-100'});
+        $(".ui-section-seven").css({'background-color': '#ffffff', 'padding': '15px', 'border-radius': '4px', 'color': '#1C2124', 'margin-top': '0', 'box-shadow': 'none', 'z-index': '-100'});
+        $(".ui-section-eight").css({'background-color': '#ffffff', 'padding': '15px', 'border-radius': '4px', 'color': '#1C2124', 'margin-top': '0', 'box-shadow': 'none', 'z-index': '-100'});
+        $(".ui-section-nine").css({'background-color': '#ffffff', 'padding': '15px', 'border-radius': '4px', 'color': '#1C2124', 'margin-top': '0', 'box-shadow': 'none', 'z-index': '-100'});
+      } else if (scroll_pos > 1540 && scroll_pos < 2122) {
+        $(".ui-section-one").css({'background-color': '#ffffff', 'padding': '15px', 'border-radius': '4px', 'color': '#1C2124', 'margin-top': '0', 'box-shadow': 'none', 'z-index': '-100'});
+        $(".ui-section-two").css({'background-color': '#ffffff', 'padding': '15px', 'border-radius': '4px', 'color': '#1C2124', 'margin-top': '0', 'box-shadow': 'none', 'z-index': '-100'});
+        $(".ui-section-three").css({'background-color': '#1C2124', 'padding': '15px', 'border-radius': '4px', 'color': '#ffffff', 'margin-top': '0', 'box-shadow': '0px 0px 30px rgba(0,0,0,50)', 'z-index': '100'});
+        $(".ui-section-four").css({'background-color': '#ffffff', 'padding': '15px', 'border-radius': '4px', 'color': '#1C2124', 'margin-top': '0', 'box-shadow': 'none', 'z-index': '-100'});
+        $(".ui-section-five").css({'background-color': '#ffffff', 'padding': '15px', 'border-radius': '4px', 'color': '#1C2124', 'margin-top': '0', 'box-shadow': 'none', 'z-index': '-100'});
+        $(".ui-section-six").css({'background-color': '#ffffff', 'padding': '15px', 'border-radius': '4px', 'color': '#1C2124', 'margin-top': '0', 'box-shadow': 'none', 'z-index': '-100'});
+        $(".ui-section-seven").css({'background-color': '#ffffff', 'padding': '15px', 'border-radius': '4px', 'color': '#1C2124', 'margin-top': '0', 'box-shadow': 'none', 'z-index': '-100'});
+        $(".ui-section-eight").css({'background-color': '#ffffff', 'padding': '15px', 'border-radius': '4px', 'color': '#1C2124', 'margin-top': '0', 'box-shadow': 'none', 'z-index': '-100'});
+        $(".ui-section-nine").css({'background-color': '#ffffff', 'padding': '15px', 'border-radius': '4px', 'color': '#1C2124', 'margin-top': '0', 'box-shadow': 'none', 'z-index': '-100'});
+      } else if (scroll_pos > 2120 && scroll_pos < 2702) {
+        $(".ui-section-one").css({'background-color': '#ffffff', 'padding': '15px', 'border-radius': '4px', 'color': '#1C2124', 'margin-top': '0', 'box-shadow': 'none', 'z-index': '-100'});
+        $(".ui-section-two").css({'background-color': '#ffffff', 'padding': '15px', 'border-radius': '4px', 'color': '#1C2124', 'margin-top': '0', 'box-shadow': 'none', 'z-index': '-100'});
+        $(".ui-section-three").css({'background-color': '#ffffff', 'padding': '15px', 'border-radius': '4px', 'color': '#1C2124', 'margin-top': '0', 'box-shadow': 'none', 'z-index': '-100'});
+        $(".ui-section-four").css({'background-color': '#1C2124', 'padding': '15px', 'border-radius': '4px', 'color': '#ffffff', 'margin-top': '0', 'box-shadow': '0px 0px 30px rgba(0,0,0,50)', 'z-index': '100'});
+        $(".ui-section-five").css({'background-color': '#ffffff', 'padding': '15px', 'border-radius': '4px', 'color': '#1C2124', 'margin-top': '0', 'box-shadow': 'none', 'z-index': '-100'});
+        $(".ui-section-six").css({'background-color': '#ffffff', 'padding': '15px', 'border-radius': '4px', 'color': '#1C2124', 'margin-top': '0', 'box-shadow': 'none', 'z-index': '-100'});
+        $(".ui-section-seven").css({'background-color': '#ffffff', 'padding': '15px', 'border-radius': '4px', 'color': '#1C2124', 'margin-top': '0', 'box-shadow': 'none', 'z-index': '-100'});
+        $(".ui-section-eight").css({'background-color': '#ffffff', 'padding': '15px', 'border-radius': '4px', 'color': '#1C2124', 'margin-top': '0', 'box-shadow': 'none', 'z-index': '-100'});
+        $(".ui-section-nine").css({'background-color': '#ffffff', 'padding': '15px', 'border-radius': '4px', 'color': '#1C2124', 'margin-top': '0', 'box-shadow': 'none', 'z-index': '-100'});
+      } else if (scroll_pos > 2700 && scroll_pos < 3282) {
+        $(".ui-section-one").css({'background-color': '#ffffff', 'padding': '15px', 'border-radius': '4px', 'color': '#1C2124', 'margin-top': '0', 'box-shadow': 'none', 'z-index': '-100'});
+        $(".ui-section-two").css({'background-color': '#ffffff', 'padding': '15px', 'border-radius': '4px', 'color': '#1C2124', 'margin-top': '0', 'box-shadow': 'none', 'z-index': '-100'});
+        $(".ui-section-three").css({'background-color': '#ffffff', 'padding': '15px', 'border-radius': '4px', 'color': '#1C2124', 'margin-top': '0', 'box-shadow': 'none', 'z-index': '-100'});
+        $(".ui-section-four").css({'background-color': '#ffffff', 'padding': '15px', 'border-radius': '4px', 'color': '#1C2124', 'margin-top': '0', 'box-shadow': 'none', 'z-index': '-100'});
+        $(".ui-section-five").css({'background-color': '#1C2124', 'padding': '15px', 'border-radius': '4px', 'color': '#ffffff', 'margin-top': '0', 'box-shadow': '0px 0px 30px rgba(0,0,0,50)', 'z-index': '100'});
+        $(".ui-section-six").css({'background-color': '#ffffff', 'padding': '15px', 'border-radius': '4px', 'color': '#1C2124', 'margin-top': '0', 'box-shadow': 'none', 'z-index': '-100'});
+        $(".ui-section-seven").css({'background-color': '#ffffff', 'padding': '15px', 'border-radius': '4px', 'color': '#1C2124', 'margin-top': '0', 'box-shadow': 'none', 'z-index': '-100'});
+        $(".ui-section-eight").css({'background-color': '#ffffff', 'padding': '15px', 'border-radius': '4px', 'color': '#1C2124', 'margin-top': '0', 'box-shadow': 'none', 'z-index': '-100'});
+        $(".ui-section-nine").css({'background-color': '#ffffff', 'padding': '15px', 'border-radius': '4px', 'color': '#1C2124', 'margin-top': '0', 'box-shadow': 'none', 'z-index': '-100'});
+      } else if (scroll_pos > 3280 && scroll_pos < 3862) {
+        $(".ui-section-one").css({'background-color': '#ffffff', 'padding': '15px', 'border-radius': '4px', 'color': '#1C2124', 'margin-top': '0', 'box-shadow': 'none', 'z-index': '-100'});
+        $(".ui-section-two").css({'background-color': '#ffffff', 'padding': '15px', 'border-radius': '4px', 'color': '#1C2124', 'margin-top': '0', 'box-shadow': 'none', 'z-index': '-100'});
+        $(".ui-section-three").css({'background-color': '#ffffff', 'padding': '15px', 'border-radius': '4px', 'color': '#1C2124', 'margin-top': '0', 'box-shadow': 'none', 'z-index': '-100'});
+        $(".ui-section-four").css({'background-color': '#ffffff', 'padding': '15px', 'border-radius': '4px', 'color': '#1C2124', 'margin-top': '0', 'box-shadow': 'none', 'z-index': '-100'});
+        $(".ui-section-five").css({'background-color': '#ffffff', 'padding': '15px', 'border-radius': '4px', 'color': '#1C2124', 'margin-top': '0', 'box-shadow': 'none', 'z-index': '-100'});
+        $(".ui-section-six").css({'background-color': '#1C2124', 'padding': '15px', 'border-radius': '4px', 'color': '#ffffff', 'margin-top': '0', 'box-shadow': '0px 0px 30px rgba(0,0,0,50)', 'z-index': '100'});
+        $(".ui-section-seven").css({'background-color': '#ffffff', 'padding': '15px', 'border-radius': '4px', 'color': '#1C2124', 'margin-top': '0', 'box-shadow': 'none', 'z-index': '-100'});
+        $(".ui-section-eight").css({'background-color': '#ffffff', 'padding': '15px', 'border-radius': '4px', 'color': '#1C2124', 'margin-top': '0', 'box-shadow': 'none', 'z-index': '-100'});
+        $(".ui-section-nine").css({'background-color': '#ffffff', 'padding': '15px', 'border-radius': '4px', 'color': '#1C2124', 'margin-top': '0', 'box-shadow': 'none', 'z-index': '-100'});
+      } else if (scroll_pos > 3860 && scroll_pos < 4442) {
+        $(".ui-section-one").css({'background-color': '#ffffff', 'padding': '15px', 'border-radius': '4px', 'color': '#1C2124', 'margin-top': '0', 'box-shadow': 'none', 'z-index': '-100'});
+        $(".ui-section-two").css({'background-color': '#ffffff', 'padding': '15px', 'border-radius': '4px', 'color': '#1C2124', 'margin-top': '0', 'box-shadow': 'none', 'z-index': '-100'});
+        $(".ui-section-three").css({'background-color': '#ffffff', 'padding': '15px', 'border-radius': '4px', 'color': '#1C2124', 'margin-top': '0', 'box-shadow': 'none', 'z-index': '-100'});
+        $(".ui-section-four").css({'background-color': '#ffffff', 'padding': '15px', 'border-radius': '4px', 'color': '#1C2124', 'margin-top': '0', 'box-shadow': 'none', 'z-index': '-100'});
+        $(".ui-section-five").css({'background-color': '#ffffff', 'padding': '15px', 'border-radius': '4px', 'color': '#1C2124', 'margin-top': '0', 'box-shadow': 'none', 'z-index': '-100'});
+        $(".ui-section-six").css({'background-color': '#ffffff', 'padding': '15px', 'border-radius': '4px', 'color': '#1C2124', 'margin-top': '0', 'box-shadow': 'none', 'z-index': '-100'});
+        $(".ui-section-seven").css({'background-color': '#1C2124', 'padding': '15px', 'border-radius': '4px', 'color': '#ffffff', 'margin-top': '0', 'box-shadow': '0px 0px 30px rgba(0,0,0,50)', 'z-index': '100'});
+        $(".ui-section-eight").css({'background-color': '#ffffff', 'padding': '15px', 'border-radius': '4px', 'color': '#1C2124', 'margin-top': '0', 'box-shadow': 'none', 'z-index': '-100'});
+        $(".ui-section-nine").css({'background-color': '#ffffff', 'padding': '15px', 'border-radius': '4px', 'color': '#1C2124', 'margin-top': '0', 'box-shadow': 'none', 'z-index': '-100'});
+      } else if (scroll_pos > 4440 && scroll_pos < 5022) {
+        $(".ui-section-one").css({'background-color': '#ffffff', 'padding': '15px', 'border-radius': '4px', 'color': '#1C2124', 'margin-top': '0', 'box-shadow': 'none', 'z-index': '-100'});
+        $(".ui-section-two").css({'background-color': '#ffffff', 'padding': '15px', 'border-radius': '4px', 'color': '#1C2124', 'margin-top': '0', 'box-shadow': 'none', 'z-index': '-100'});
+        $(".ui-section-three").css({'background-color': '#ffffff', 'padding': '15px', 'border-radius': '4px', 'color': '#1C2124', 'margin-top': '0', 'box-shadow': 'none', 'z-index': '-100'});
+        $(".ui-section-four").css({'background-color': '#ffffff', 'padding': '15px', 'border-radius': '4px', 'color': '#1C2124', 'margin-top': '0', 'box-shadow': 'none', 'z-index': '-100'});
+        $(".ui-section-five").css({'background-color': '#ffffff', 'padding': '15px', 'border-radius': '4px', 'color': '#1C2124', 'margin-top': '0', 'box-shadow': 'none', 'z-index': '-100'});
+        $(".ui-section-six").css({'background-color': '#ffffff', 'padding': '15px', 'border-radius': '4px', 'color': '#1C2124', 'margin-top': '0', 'box-shadow': 'none', 'z-index': '-100'});
+        $(".ui-section-seven").css({'background-color': '#ffffff', 'padding': '15px', 'border-radius': '4px', 'color': '#1C2124', 'margin-top': '0', 'box-shadow': 'none', 'z-index': '-100'});
+        $(".ui-section-eight").css({'background-color': '#1C2124', 'padding': '15px', 'border-radius': '4px', 'color': '#ffffff', 'margin-top': '0', 'box-shadow': '0px 0px 30px rgba(0,0,0,50)', 'z-index': '100'});
+        $(".ui-section-nine").css({'background-color': '#ffffff', 'padding': '15px', 'border-radius': '4px', 'color': '#1C2124', 'margin-top': '0', 'box-shadow': 'none', 'z-index': '-100'});
+      } else {
+        $(".ui-section-one").css({'background-color': '#ffffff', 'padding': '15px', 'border-radius': '4px', 'color': '#1C2124', 'margin-top': '0', 'box-shadow': 'none', 'z-index': '-100'});
+        $(".ui-section-two").css({'background-color': '#ffffff', 'padding': '15px', 'border-radius': '4px', 'color': '#1C2124', 'margin-top': '0', 'box-shadow': 'none', 'z-index': '-100'});
+        $(".ui-section-three").css({'background-color': '#ffffff', 'padding': '15px', 'border-radius': '4px', 'color': '#1C2124', 'margin-top': '0', 'box-shadow': 'none', 'z-index': '-100'});
+        $(".ui-section-four").css({'background-color': '#ffffff', 'padding': '15px', 'border-radius': '4px', 'color': '#1C2124', 'margin-top': '0', 'box-shadow': 'none', 'z-index': '-100'});
+        $(".ui-section-five").css({'background-color': '#ffffff', 'padding': '15px', 'border-radius': '4px', 'color': '#1C2124', 'margin-top': '0', 'box-shadow': 'none', 'z-index': '-100'});
+        $(".ui-section-six").css({'background-color': '#ffffff', 'padding': '15px', 'border-radius': '4px', 'color': '#1C2124', 'margin-top': '0', 'box-shadow': 'none', 'z-index': '-100'});
+        $(".ui-section-seven").css({'background-color': '#ffffff', 'padding': '15px', 'border-radius': '4px', 'color': '#1C2124', 'margin-top': '0', 'box-shadow': 'none', 'z-index': '-100'});
+        $(".ui-section-eight").css({'background-color': '#ffffff', 'padding': '15px', 'border-radius': '4px', 'color': '#1C2124', 'margin-top': '0', 'box-shadow': 'none', 'z-index': '-100'});
+        $(".ui-section-nine").css({'background-color': '#1C2124', 'padding': '15px', 'border-radius': '4px', 'color': '#ffffff', 'margin-top': '0', 'box-shadow': '0px 0px 30px rgba(0,0,0,50)', 'z-index': '100'});
+      }
+      console.log(scroll_pos);
+  });
+});
+
 $(document).ready(function() {
     /* Every time the window is scrolled ... */
     $(window).scroll( function(){
