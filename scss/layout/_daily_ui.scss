@@ -147,16 +147,52 @@
         top: -170px;
         visibility: hidden;
       }
-      #design-anchor {
+      #checkout-anchor {
         display: block;
         position: relative;
-        top: -170px;
+        top: -90px;
         visibility: hidden;
       }
-      #next-anchor {
+      #profile-anchor {
         display: block;
         position: relative;
-        top: -170px;
+        top: -90px;
+        visibility: hidden;
+      }
+      #calculator-anchor {
+        display: block;
+        position: relative;
+        top: -90px;
+        visibility: hidden;
+      }
+      #settings-anchor {
+        display: block;
+        position: relative;
+        top: -90px;
+        visibility: hidden;
+      }
+      #landing-anchor {
+        display: block;
+        position: relative;
+        top: -90px;
+        visibility: hidden;
+      }
+      #error-anchor {
+        display: block;
+        position: relative;
+        top: -90px;
+        visibility: hidden;
+      }
+      #music-anchor {
+        display: block;
+        position: relative;
+        top: -90px;
+        visibility: hidden;
+      }
+      #timer-anchor {
+        display: block;
+        position: relative;
+        top: -90px;
         visibility: hidden;
       }
     }
@@ -192,22 +228,40 @@
       }
       .ui-project-group {
         display: flex;
+        flex-direction: column-reverse;
+        @media #{$breakpoint-medium} {
+          flex-direction: row;
+          justify-content: center;
+          align-items: center;
+        }
         justify-content: center;
         align-items: center;
         .ui-copy-group {
-          width: 50%;
+          width: 100%;
+          @media #{$breakpoint-medium} {
+            width: 50%;
+          }
         }
         .ui-img {
           display: flex;
           justify-content: center;
           align-items: center;
-          margin: 30px 0 60px 0;
+          margin: 50px 0 0 0;
+          @media #{$breakpoint-medium} {
+            margin: 30px 0 60px 0;
+          }
           img {
             width: 80%;
             // box-shadow: 0 0 30px 0 rgba(0,0,0,0.5);
             @media #{$breakpoint-medium} {
               width: 60%;
             }
+          }
+        }
+        .ui-checkout-img {
+          margin: 0;
+          @media #{$breakpoint-medium} {
+            margin: 30px 0 60px 0;
           }
         }
       }
@@ -220,76 +274,9 @@
         opacity: 0;
       }
       .ui-project-group.odd {
-        flex-direction: row-reverse;
-      }
-    }
-    .design-section {
-      .booth-sitemap {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        margin: 30px 0 50px 0;
-        img {
-          width: 100%;
-          @media #{$breakpoint-medium} {
-            width: 80%;
-          }
-        }
-      }
-      .booth-video-container {
-        // display: none;
-        margin: 50px 0;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        width: 100%;
-        .booth-video {
-          object-fit: contain;
-          box-shadow: 0 0 30px 0 rgba(0,0,0,0.5);
-          width: 100%;
-          @media #{$breakpoint-medium} {
-            width: 70%;
-          }
-        }
-      }
-      .booth-ui-group {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        img {
-          width: 100%;
-          @media #{$breakpoint-medium} {
-            width: 70%;
-          }
-        }
-      }
-      .mockup-group {
-        background-image: linear-gradient(45deg, #EBEE98, #C24176);
-        width: 100vw;
-        background-size: cover;
-        position: relative;
-        left: -20px;
-        overflow: hidden;
-        margin: 30px 0 50px 0;
-        @media #{$breakpoint-large} {
-          left: -33.8%;
-        }
-        .mockup-group-positioning {
-          position: relative;
-          left: -50px;
-          @media #{$breakpoint-large} {
-            left: -70px;
-          }
-          img {
-            height: 180px;
-            padding-bottom: 15px;
-            @media #{$breakpoint-medium} {
-              height: 250px;
-            }
-            @media #{$breakpoint-large} {
-              height: 400px;
-            }
-          }
+        flex-direction: column-reverse;
+        @media #{$breakpoint-medium} {
+          flex-direction: row-reverse;
         }
       }
     }
