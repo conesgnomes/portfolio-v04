@@ -1,69 +1,121 @@
-.ux-journey {
-  margin-top: 115px;
-  @media #{$breakpoint-medium} {
-    padding: 0 75px;
-  }
-  @media #{$breakpoint-large} {
-    margin-top: 150px;
-  }
-  @media #{$breakpoint-xlarge} {
-    padding: 0 150px;
-  }
-  .ux-journey-img {
+.bio-header {
+  background-image: linear-gradient(45deg, rgba(96,162,156,100), rgba(198,161,50,100));
+  .nav-bar {
     display: flex;
+    flex-direction: column;
     align-items: center;
-    justify-content: center;
-    margin-top: 50px;
-    .journey-mobile {
-      object-fit: contain;
-      width: 100%;
-      max-width: 332px;
-      @media #{$breakpoint-medium} {
-        display: none;
+    padding: 20px 0;
+    @media #{$breakpoint-large} {
+      justify-content: space-between;
+      flex-direction: row;
+      padding: 40px;
+    }
+    .page-hero {
+      a {
+        font-size: 34px;
+        text-align: center;
+        text-decoration: none;
+        @media #{$breakpoint-large} {
+          font-size: 32px;
+        }
       }
     }
-    .journey-desktop {
-      object-fit: contain;
-      width: 100%;
-      max-width: 840px;
-      @media #{$breakpoint-small} {
-        display: none;
-      }
+    .page-nav {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding-top: 10px;
       @media #{$breakpoint-medium} {
-        display: block;
+        justify-content: flex-start;
+        align-items: flex-end;
+      }
+      .navigation {
+        display: flex;
+        @media #{$breakpoint-medium} {
+          flex-direction: row;
+          align-items: flex-start;
+        }
+        li {
+          list-style: none;
+          @media #{$breakpoint-small} {
+            top: -210px;
+          }
+          @media #{$breakpoint-medium} {
+            top: 0;
+            position: inline;
+          }
+          .nav-two {
+            margin: 0 30px;
+            @media #{$breakpoint-medium} {
+              margin: 0 20px;
+            }
+            @media #{$breakpoint-large} {
+              margin: 0 30px;
+            }
+          }
+        }
       }
     }
   }
 }
-.brands {
-  @media #{$breakpoint-medium} {
-    padding: 0 75px;
+.ux-journey {
+  padding: 40px 20px 50px 20px;
+  @media #{$breakpoint-large} {
+    padding: 40px 40px 100px 40px;
+  }
+  @media #{$breakpoint-large} {
+    padding-left: 23%;
   }
   @media #{$breakpoint-xlarge} {
-    padding: 0 150px;
+    padding-left: 15%;
   }
-  margin-top: 100px;
-  .brands-img {
-    @media #{$breakpoint-medium} {
-      display: flex;
-      flex-direction: row;
-      align-content: center;
-      width: 100%;
+  h4 {
+    margin-top: 30px;
+    line-height: 35px;
+    @media #{$breakpoint-large} {
+      line-height: 45px;
     }
-    margin-top: 50px;
-    a {
-      img {
-        width: 100%;
-        height: 100%;
-      }
+    span {
+      position: relative;
+      left: 10px;
+    }
+    .inline-link {
+      @include link($blue-grey, rgba(28,33,36,0.5), 95%);
     }
   }
 }
-.bio-body {
-  margin-top: 50px;
-  @media #{$breakpoint-large} {
-    margin-top: 75px;
-  }
+
+
+
+// .brands {
+//   @media #{$breakpoint-medium} {
+//     padding: 0 75px;
+//   }
+//   @media #{$breakpoint-xlarge} {
+//     padding: 0 150px;
+//   }
+//   margin-top: 100px;
+//   .brands-img {
+//     @media #{$breakpoint-medium} {
+//       display: flex;
+//       flex-direction: row;
+//       align-content: center;
+//       width: 100%;
+//     }
+//     margin-top: 50px;
+//     a {
+//       img {
+//         width: 100%;
+//         height: 100%;
+//       }
+//     }
+//   }
+// }
+// .bio-body {
+//   margin-top: 50px;
+//   @media #{$breakpoint-large} {
+//     margin-top: 75px;
+//   }
   // @media #{$breakpoint-medium} {
   //   padding: 0 75px;
   // }
@@ -88,28 +140,28 @@
   //     color: #000000;
   //   }
   // }
-  .social-icons {
-    margin-top: 125px;
-    display: flex;
-    justify-content: center;
-    .social-item {
-      padding: 0 15px;
-      transition: color 0.2s ease-in;
-      &:hover {
-        color: #000000;
-      }
-      @media #{$breakpoint-medium} {
-        padding: 0 25px;
-      }
-    }
-  }
-  .button-container {
-    display: flex;
-    justify-content: center;
-    margin-top: 50px;
-    @media #{$breakpoint-large} {
-      margin-top: 75px;
-    }
-    @include cta-button(#000000);
-  }
-}
+  // .social-icons {
+  //   margin-top: 125px;
+  //   display: flex;
+  //   justify-content: center;
+  //   .social-item {
+  //     padding: 0 15px;
+  //     transition: color 0.2s ease-in;
+  //     &:hover {
+  //       color: #000000;
+  //     }
+  //     @media #{$breakpoint-medium} {
+  //       padding: 0 25px;
+  //     }
+  //   }
+  // }
+  // .button-container {
+  //   display: flex;
+  //   justify-content: center;
+  //   margin-top: 50px;
+  //   @media #{$breakpoint-large} {
+  //     margin-top: 75px;
+  //   }
+  //   @include cta-button(#000000);
+  // }
+// }

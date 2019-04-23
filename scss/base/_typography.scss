@@ -125,6 +125,19 @@ p, li {
   }
 }
 
+.to-top {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  z-index: 1000;
+  a {
+    i {
+      font-size: 30px;
+      color: $blue-grey;
+    }
+  }
+}
+
 // .project-subtitle {
 //   font-family: "lato-regular";
 //   color: #999999;
