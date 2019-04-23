@@ -1,6 +1,19 @@
 footer {
-  margin: 150px 0 50px 0;
+  position: relative;
+  top: 300px; 
+  .social-footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    a {
+      color: $blue-grey;
+      &:nth-child(2) {
+        margin: 0 20px;
+      }
+    }
+  }
   p {
+    text-transform: capitalize;
     text-align: center;
   }
 }
