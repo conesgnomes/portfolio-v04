@@ -40,8 +40,11 @@
         @media #{$breakpoint-medium} {
           display: none;
         }
-        .nav-two {
-          margin: 0 30px;
+        li {
+          list-style: none;
+          .nav-two {
+            margin: 0 30px;
+          }
         }
       }
       .hero-subtitle {
