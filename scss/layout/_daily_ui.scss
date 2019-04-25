@@ -208,11 +208,20 @@
         @media #{$breakpoint-large} {
           left: -33.8%;
         }
+        @media #{$breakpoint-xlarge} {
+          left: -19.4%;
+        }
         .ui-group-positioning {
           position: relative;
           left: -50px;
           @media #{$breakpoint-large} {
             left: -70px;
+          }
+          @media #{"only screen and (min-width: 1840px)"} {
+            position: static;
+            display: flex;
+            justify-content: center;
+            align-items: center;
           }
           img {
             height: 180px;

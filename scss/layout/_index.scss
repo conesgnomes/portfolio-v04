@@ -32,8 +32,20 @@
          text-align: left;
        }
       }
+      .navigation-mobile {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-top: 10px;
+        @media #{$breakpoint-medium} {
+          display: none;
+        }
+        .nav-two {
+          margin: 0 30px;
+        }
+      }
       .hero-subtitle {
-        padding-top: 50px;
+        padding-top: 20px;
         position: relative;
       	z-index: 1; /* needed for setting pseudo-element z-index */
       	overflow: hidden;
@@ -47,37 +59,45 @@
           @include link(#ffffff, rgba(255,255,255,0.5), 95%);
         }
       }
+      .social-icons-mobile {
+        padding: 0 0 30px 0;
+        display: flex;
+        align-items: flex-end;
+        justify-content: center;
+        @media #{$breakpoint-medium} {
+          display: none;
+        }
+        .social-item {
+          margin-top: 20px;
+        }
+        .social-center {
+          padding: 0 30px;
+        }
+      }
     }
     nav {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
+      display: none;
       @media #{$breakpoint-medium} {
+        flex-direction: column;
         display: flex;
         justify-content: flex-start;
         align-items: flex-end;
       }
       .navigation {
-        display: flex;
-        z-index: 1000;
         @media #{$breakpoint-medium} {
+          display: flex;
           flex-direction: row;
           align-items: flex-start;
         }
         li {
-          list-style: none;
-          position: relative;
-          top: -210px;
-          @media #{$breakpoint-small} {
-            top: -210px;
-          }
           @media #{$breakpoint-medium} {
+            list-style: none;
             top: 0;
             position: inline;
           }
           .nav-two {
-            margin: 0 30px;
             @media #{$breakpoint-medium} {
+              margin: 0 30px;
               margin: 0 20px;
             }
             @media #{$breakpoint-large} {
@@ -87,25 +107,27 @@
         }
       }
       .social-icons {
-        padding-bottom: 20px;
+        display: none;
         @media #{$breakpoint-medium} {
+          padding-bottom: 20px;
           display: flex;
           flex-direction: column;
           align-items: flex-end;
           justify-content: center;
         }
         .social-item {
-          margin-top: 20px;
+          @media #{$breakpoint-medium} {
+            margin-top: 20px;
+          }
           @media #{$breakpoint-large} {
             margin-top: 30px;
           }
         }
         .social-center {
-          padding: 0 30px;
           @media #{$breakpoint-medium} {
             padding: 0;
           }
-         }
+        }
       }
     }
   }

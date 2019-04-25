@@ -189,11 +189,20 @@
         @media #{$breakpoint-large} {
           left: -33.8%;
         }
+        @media #{$breakpoint-xlarge} {
+          left: -19.4%;
+        }
         .gds-components-position {
           position: relative;
           left: -250px;
           @media #{$breakpoint-medium} {
             left: -200px;
+          }
+          @media #{"only screen and (min-width: 1840px)"} {
+            position: static;
+            display: flex;
+            justify-content: center;
+            align-items: center;
           }
           img {
             height: 180px;
@@ -257,11 +266,20 @@
         @media #{$breakpoint-large} {
           left: -33.8%;
         }
+        @media #{$breakpoint-xlarge} {
+          left: -19.4%;
+        }
         .gds-component-layouts-positioning {
           position: relative;
           left: -120px;
           @media #{$breakpoint-large} {
             left: -200px;
+          }
+          @media #{"only screen and (min-width: 1840px)"} {
+            position: static;
+            display: flex;
+            justify-content: center;
+            align-items: center;
           }
           img {
             height: 180px;
