@@ -21,6 +21,26 @@
   </head>
   <main id="swup" class="transition-fade">
     <body class="index">
+      <SCRIPT>
+        function passWord() {
+          var testV = 1;
+          var pass1 = prompt('Please Enter Your Password',' ');
+          while (testV < 3) {
+            if (!pass1)
+            history.go(-1);
+            if (pass1.toLowerCase() == "gds") {
+              window.open('https://connorlarsen.com/gds.html');
+              break;
+            }
+            testV+=1;
+            var pass1 =
+            prompt('Access Denied - Password Incorrect. Reach out to connorlarsen@gmail.com for access.');
+          }
+          if (pass1.toLowerCase()!="password" & testV ==3)
+          history.go(-1);
+          return " ";
+        }
+      </SCRIPT>
       <header class="index-header">
         <div class="hero-copy">
           <h1>Connor Larsen</h1>
@@ -57,7 +77,7 @@
                 <h5 class="project-subtitle">Design System</h5>
                 <h2 class="project-title">Giant Design System</h2>
                 <div class="button-container">
-                  <a class="btn" href="gds.html">view project</a>
+                  <a class="btn" href="" onClick="passWord()">view project</a>
                 </div>
               </div>
             </div>
