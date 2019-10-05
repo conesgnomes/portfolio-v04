@@ -169,6 +169,15 @@
           @include project-card(url("../../img/daily-landing-background.png"), rgba(164,79,122,100), rgba(144,143,228,100), center, 35vh, 170%);
         }
       }
+      .project-four {
+        @include project-card(url("../../img/daily-landing-background.png"), rgba(164,79,122,100), rgba(144,143,228,100), 120px, -200px, 100%);
+        @media #{$breakpoint-medium} {
+          @include project-card(url("../../img/daily-landing-background.png"), rgba(164,79,122,100), rgba(144,143,228,100), 320px, -350px, 100%);
+        }
+        @media #{$breakpoint-large} {
+          @include project-card(url("../../img/daily-landing-background.png"), rgba(164,79,122,100), rgba(144,143,228,100), center, 35vh, 170%);
+        }
+      }
       .project {
         &:nth-child(1) {
           margin-top: 10px;
@@ -194,7 +203,7 @@
           left: 0;
           right: 0;
           overflow: hidden;
-          width: 32.5%;
+          width: 24%;
           height: 100vh;
         }
         .project-label {
