@@ -142,7 +142,7 @@
         flex-direction: row;
         justify-content: space-between;
       }
-      .project-one {
+      .project-two {
         @include project-card(url("../../img/GDS-landing-background.png"), rgba(67,133,155,100), rgba(110,206,178,100), 200px, -50px, 100%);
         @media #{$breakpoint-medium} {
           @include project-card(url("../../img/GDS-landing-background.png"), rgba(67,133,155,100), rgba(110,206,178,100), 300px, -80px, 100%);
@@ -151,7 +151,7 @@
           @include project-card(url("../../img/GDS-landing-background.png"), rgba(67,133,155,100), rgba(110,206,178,100), center, 35vh, cover);
         }
       }
-      .project-two {
+      .project-three {
         @include project-card(url("../../img/booth-landing-background.png"), rgba(194,65,118,100), rgba(235,238,152,100), 230px, -20px, 100%);
         @media #{$breakpoint-medium} {
           @include project-card(url("../../img/booth-landing-background.png"), rgba(194,65,118,100), rgba(235,238,152,100), 300px, -80px, 100%);
@@ -160,7 +160,7 @@
           @include project-card(url("../../img/booth-landing-background.png"), rgba(194,65,118,100), rgba(235,238,152,100), center, 35vh, cover);
         }
       }
-      .project-three {
+      .project-four {
         @include project-card(url("../../img/daily-landing-background.png"), rgba(164,79,122,100), rgba(144,143,228,100), 120px, -200px, 100%);
         @media #{$breakpoint-medium} {
           @include project-card(url("../../img/daily-landing-background.png"), rgba(164,79,122,100), rgba(144,143,228,100), 320px, -350px, 100%);
