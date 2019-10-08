@@ -28,16 +28,6 @@
       flex-direction: row;
       padding: 40px;
     }
-    .page-hero {
-      h1 {
-        font-size: 34px;
-        text-align: center;
-        padding: 20px 20px 0 20px;
-        @media #{$breakpoint-large} {
-          font-size: 32px;
-        }
-      }
-    }
     .page-nav {
       display: flex;
       flex-direction: column;

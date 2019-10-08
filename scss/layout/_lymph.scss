@@ -17,7 +17,7 @@
 // --------------------------
 
 .lymph-header {
-  background-image: linear-gradient(45deg, rgba(235,238,152,100), rgba(194,65,118,100));
+  background-image: linear-gradient(45deg, rgba(170,78,107,100), rgba(49,165,193,100));
   .nav-bar {
     display: flex;
     flex-direction: column;
@@ -27,15 +27,6 @@
       justify-content: space-between;
       flex-direction: row;
       padding: 40px;
-    }
-    .page-hero {
-      h1 {
-        font-size: 34px;
-        text-align: center;
-        @media #{$breakpoint-large} {
-          font-size: 32px;
-        }
-      }
     }
     .page-nav {
       display: flex;
@@ -155,13 +146,13 @@
         top: -170px;
         visibility: hidden;
       }
-      #design-anchor {
+      #research-anchor {
         display: block;
         position: relative;
         top: -170px;
         visibility: hidden;
       }
-      #next-anchor {
+      #design-anchor {
         display: block;
         position: relative;
         top: -170px;
@@ -169,8 +160,7 @@
       }
     }
     .research-section,
-    .design-section,
-    .next-section {
+    .design-section {
       margin-top: 60px;
     }
     .overview-section {
@@ -211,6 +201,7 @@
           align-items: center;
           margin-top: 10px;
           @media #{$breakpoint-medium} {
+            padding-right: 6%;
             margin-top: 0px;
           }
           .lymph-scroll-image {
@@ -239,6 +230,7 @@
           align-items: center;
           margin-top: 10px;
           @media #{$breakpoint-medium} {
+            padding-right: 6%;
             margin-top: 0px;
           }
           .lymph-tap-image {
@@ -252,6 +244,7 @@
         }
       }
       .tile-model-group {
+        margin-top: 50px;
         @media #{$breakpoint-medium} {
           display: flex;
         }
@@ -397,6 +390,15 @@
           @media #{$breakpoint-medium} {
             width: 80%;
           }
+        }
+      }
+      .site-link {
+        line-height: 35px;
+        @media #{$breakpoint-large} {
+          line-height: 45px;
+        }
+        .inline-link {
+          @include link($blue-grey, rgba(28,33,36,0.5), 95%);
         }
       }
     }

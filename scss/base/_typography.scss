@@ -76,6 +76,16 @@ p, li {
     color: #ffffff;
   }
 
+  .page-hero {
+    h1 {
+      font-size: 32px;
+      text-align: center;
+      @media #{$breakpoint-large} {
+        font-size: 32px;
+      }
+    }
+  }
+
 .hero-subtitle {
   font-family: "lato-light";
   font-size: 18px;

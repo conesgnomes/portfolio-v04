@@ -42,6 +42,7 @@
 @mixin new-cta-button($border-color, $button-color) {
   .btn {
     @include link(#ffffff, rgba(255,255,255,1), 100%);
+    cursor: pointer;
     font-family: "lato-black";
     text-transform: uppercase;
     border: 2px solid $border-color;

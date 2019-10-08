@@ -79,6 +79,32 @@ $(window).scroll(function(){
 
 // Change background color of project nav on scrollTop
 
+// Adcetris.com
+
+$(document).ready(function () {
+  var scroll_pos = 0;
+  $(".lymph-section-one").css({'background-color': '#1C2124', 'padding': '15px', 'border-radius': '4px', 'color': '#ffffff', 'margin-top': '0', 'box-shadow': '0px 0px 30px rgba(0,0,0,50)', 'z-index': '100'});
+  $(".lymph-section-two").css({'background-color': '#ffffff', 'padding': '15px', 'border-radius': '4px', 'color': '#1C2124', 'margin-top': '0', 'box-shadow': 'none', 'z-index': '-100'});
+  $(".lymph-section-three").css({'background-color': '#ffffff', 'padding': '15px', 'border-radius': '4px', 'color': '#1C2124', 'margin-top': '0', 'box-shadow': 'none', 'z-index': '-100'});
+  $(document).scroll(function () {
+      scroll_pos = $(this).scrollTop();
+      if (scroll_pos > 1130 && scroll_pos < 6942) {
+        $(".lymph-section-one").css({'background-color': '#ffffff', 'padding': '15px', 'border-radius': '4px', 'color': '#1C2124', 'margin-top': '0', 'box-shadow': 'none', 'z-index': '-100'});
+        $(".lymph-section-two").css({'background-color': '#1C2124', 'padding': '15px', 'border-radius': '4px', 'color': '#ffffff', 'margin-top': '0' , 'box-shadow': '0px 0px 30px rgba(0,0,0,50)', 'z-index': '100'});
+        $(".lymph-section-three").css({'background-color': '#ffffff', 'padding': '15px', 'border-radius': '4px', 'color': '#1C2124', 'margin-top': '0', 'box-shadow': 'none', 'z-index': '-100'});
+      } else if (scroll_pos > 6940) {
+        $(".lymph-section-one").css({'background-color': '#ffffff', 'padding': '15px', 'border-radius': '4px', 'color': '#1C2124', 'margin-top': '0', 'box-shadow': 'none', 'z-index': '-100'});
+        $(".lymph-section-two").css({'background-color': '#ffffff', 'padding': '15px', 'border-radius': '4px', 'color': '#1C2124', 'margin-top': '0', 'box-shadow': 'none', 'z-index': '-100'});
+        $(".lymph-section-three").css({'background-color': '#1C2124', 'padding': '15px', 'border-radius': '4px', 'color': '#ffffff', 'margin-top': '0', 'box-shadow': '0px 0px 30px rgba(0,0,0,50)', 'z-index': '100'});
+      } else {
+        $(".lymph-section-one").css({'background-color': '#1C2124', 'padding': '15px', 'border-radius': '4px', 'color': '#ffffff', 'margin-top': '0', 'box-shadow': '0px 0px 30px rgba(0,0,0,50)', 'z-index': '100'});
+        $(".lymph-section-two").css({'background-color': '#ffffff', 'padding': '15px', 'border-radius': '4px', 'color': '#1C2124', 'margin-top': '0', 'box-shadow': 'none', 'z-index': '-100'});
+        $(".lymph-section-three").css({'background-color': '#ffffff', 'padding': '15px', 'border-radius': '4px', 'color': '#1C2124', 'margin-top': '0', 'box-shadow': 'none', 'z-index': '-100'});
+      }
+      console.log(scroll_pos);
+  });
+});
+
 // Giant Design System
 
 $(document).ready(function () {
