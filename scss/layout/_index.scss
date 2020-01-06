@@ -1,21 +1,23 @@
 .index {
   height: 100%;
-  padding: 40px;
+  padding: 20px;
+  @media #{$breakpoint-medium} {
+    padding: 40px;
+  }
+  @media #{$breakpoint-large} {
+    padding: 80px;
+  }
+  @media #{$breakpoint-xlarge} {
+    padding: 160px;
+  }
   .index-header {
     display: flex;
     flex-direction: column;
-    // padding-top: 20px;
-    // padding-left: 20px;
-    // padding-right: 20px;
     @media #{$breakpoint-medium} {
       justify-content: space-between;
       flex-direction: row;
     }
     @media #{$breakpoint-large} {
-      // padding-top: 40px;
-      // padding-left: 40px;
-      // padding-right: 40px;
-      // background-image: linear-gradient(rgba(28,33,36,100), rgba(28,33,36,0));
       position: absolute;
     }
     .hero-copy {
@@ -75,15 +77,26 @@
     }
     nav {
       display: none;
+      // @media #{$breakpoint-medium} {
+      //   padding: 40px;
+      // }
+      // @media #{$breakpoint-large} {
+      //   padding: 80px;
+      // }
+      // @media #{$breakpoint-xlarge} {
+      //   padding: 160px;
+      // }
       @media #{$breakpoint-medium} {
-        padding-right: 0px;
         flex-direction: column;
         display: flex;
         justify-content: flex-start;
         align-items: flex-end;
       }
       @media #{$breakpoint-large} {
-        padding-right: 40px;
+        padding-right: 80px; // must add padding here since display flex takes it out of regular flow of doc otherwise overall page padding won't be applied
+      }
+      @media #{$breakpoint-xlarge} {
+        padding-right: 160px; // must add padding here since display flex takes it out of regular flow of doc otherwise overall page padding won't be applied
       }
       .navigation {
         @media #{$breakpoint-medium} {
@@ -133,7 +146,6 @@
     }
   }
   .index-body {
-    padding-top: 40px;
     width: 100%;
     @media #{$breakpoint-medium} {
       padding-top: 80px;
@@ -153,6 +165,7 @@
         .project {
           a {
             text-decoration: none;
+            cursor: pointer;
             .project-label {
               margin-top: 8px;
             }

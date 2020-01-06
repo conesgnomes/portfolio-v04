@@ -39,7 +39,7 @@ h3 {
 }
 
 h4 {
-  font-family: "lato-regular";
+  font-family: "montserrat-reg";
   color: $blue-grey;
   font-size: 18px;
   line-height: 26px;
@@ -50,7 +50,7 @@ h4 {
 }
 
 p, li {
-  font-family: "lato-regular";
+  font-family: "montserrat-reg";
   font-size: 16px;
   line-height: 20px;
   @media #{$breakpoint-large} {
@@ -78,15 +78,14 @@ p, li {
     color: $blue-grey;
   }
 
-  // .page-hero {
-  //   h1 {
-  //     font-size: 32px;
-  //     text-align: center;
-  //     @media #{$breakpoint-large} {
-  //       font-size: 32px;
-  //     }
-  //   }
-  // }
+  .page-hero {
+    h1 {
+      text-align: center;
+      @media #{$breakpoint-large} {
+        text-align: left;
+      }
+    }
+  }
 
 .project-label {
   font-family: "montserrat-semibold";
