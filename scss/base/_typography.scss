@@ -1,6 +1,6 @@
 // Font from xl to small = 1.6x bigger and .625x smaller
 
-h1, h2, h3, h4, h5, h6, p, ul, a {
+h1, h2, h3, h4, h5, h6, p, ul, li, a {
   margin: 0;
   padding: 0;
   color: $blue-grey;
@@ -24,7 +24,7 @@ h2 {
   text-transform: uppercase;
   font-size: 28px;
   @media #{$breakpoint-large} {
-    font-size: 36px;
+    font-size: 32px;
   }
 }
 
@@ -34,7 +34,7 @@ h3 {
   font-size: 20px;
   line-height: 24px;
   @media #{$breakpoint-large} {
-    font-size: 28px;
+    font-size: 24px;
   }
 }
 
@@ -42,20 +42,20 @@ h4 {
   font-family: "montserrat-reg";
   color: $blue-grey;
   font-size: 18px;
-  line-height: 26px;
+  line-height: 30px;
   @media #{$breakpoint-large} {
-    font-size: 24px;
-    line-height: 35px;
+    font-size: 22px;
+    line-height: 34px;
   }
 }
 
 p, li {
   font-family: "montserrat-reg";
   font-size: 16px;
-  line-height: 20px;
+  line-height: 28px;
   @media #{$breakpoint-large} {
     font-size: 18px;
-    line-height: 28px;
+    line-height: 30px;
   }
 }
 

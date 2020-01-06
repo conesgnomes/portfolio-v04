@@ -117,8 +117,11 @@
       // @media #{$breakpoint-xlarge} {
       //   padding-left: 15%;
       // }
-      .section {
-        margin-top: 60px;
+      .overview-section {
+        margin-top: 20px;
+        @media #{$breakpoint-medium} {
+          margin-top: 60px;
+        }
         h4 {
           margin-top: 20px;
           .inline-link {

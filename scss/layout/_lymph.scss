@@ -175,6 +175,10 @@
         margin-top: 60px;
       }
       .overview-section {
+        margin-top: 20px;
+        @media #{$breakpoint-medium} {
+          margin-top: 60px;
+        }
         ul {
           margin-top: 10px;
           padding-left: 0;
