@@ -155,11 +155,11 @@
     }
     .project-group {
       display: grid;
-      grid-template-rows: 1fr 1fr;
+      // grid-template-rows: 1fr 1fr;
       grid-row-gap: 40px;
       .upper-projects {
         display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
         grid-column-gap: 30px;
         grid-row-gap: 40px;
         .project {
@@ -172,12 +172,25 @@
             .project-graphic {
               height: 200px;
               @media #{$breakpoint-large} {
-                height: 350px;
+                height: 250px;
               }
             }
           }
         }
         .project-one {
+          .project-graphic {
+            background-color: #C1CD97;
+            position: relative;
+            overflow: hidden;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            img {
+              width: 200%;
+            }
+          }
+        }
+        .project-two {
           .project-graphic {
             background-color: #C8B4BA;
             position: relative;
@@ -191,39 +204,6 @@
             }
           }
         }
-        .project-two {
-          .project-graphic {
-            background-color: #C1CD97;
-            position: relative;
-            overflow: hidden;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            img {
-              width: 200%;
-            }
-          }
-        }
-      }
-      .lower-projects {
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-        grid-column-gap: 30px;
-        grid-row-gap: 40px;
-        .project {
-          a {
-            text-decoration: none;
-            .project-label {
-              margin-top: 8px;
-            }
-            .project-graphic {
-              height: 200px;
-              @media #{$breakpoint-large} {
-                height: 350px;
-              }
-            }
-          }
-        }
         .project-three {
           .project-graphic {
             background-color: #F3DDB3;
@@ -234,24 +214,44 @@
             justify-content: center;
             img {
               width: 140%;
-              max-height: 85%;
-            }
-          }
-        }
-        .project-four {
-          .project-graphic {
-            background-color: #AEC6CF;
-            position: relative;
-            overflow: hidden;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            img {
-              width: 130%;
+              // max-height: 85%;
             }
           }
         }
       }
+      // .lower-projects {
+      //   display: grid;
+      //   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      //   grid-column-gap: 30px;
+      //   grid-row-gap: 40px;
+      //   .project {
+      //     a {
+      //       text-decoration: none;
+      //       .project-label {
+      //         margin-top: 8px;
+      //       }
+      //       .project-graphic {
+      //         height: 200px;
+      //         @media #{$breakpoint-large} {
+      //           height: 350px;
+      //         }
+      //       }
+      //     }
+      //   }
+      //   .project-four {
+      //     .project-graphic {
+      //       background-color: #AEC6CF;
+      //       position: relative;
+      //       overflow: hidden;
+      //       display: flex;
+      //       align-items: center;
+      //       justify-content: center;
+      //       img {
+      //         width: 130%;
+      //       }
+      //     }
+      //   }
+      // }
     }
   }
 }
