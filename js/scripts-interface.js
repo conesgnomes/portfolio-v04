@@ -79,8 +79,6 @@ $(window).scroll(function(){
 
 // Change background color of project nav on scrollTop
 
-// Adcetris.com
-
 $(document).ready(function () {
   var scroll_pos = 0;
   $(".lymph-section-one").css({'background-color': '#1C2124', 'padding': '15px', 'border-radius': '4px', 'color': '#ffffff', 'margin-top': '0', 'box-shadow': '0px 0px 30px rgba(0,0,0,50)', 'z-index': '100'});

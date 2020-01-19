@@ -63,6 +63,10 @@ p, li {
   font-family: "lato-bold";
 }
 
+.sub-bullet {
+  list-style-type: circle;
+}
+
 .nav-item {
   font-family: "montserrat-semibold";
   color: $blue-grey;
@@ -78,14 +82,14 @@ p, li {
     color: $blue-grey;
   }
 
-  .page-hero {
-    h1 {
-      text-align: center;
-      @media #{$breakpoint-large} {
-        text-align: left;
-      }
+.page-hero {
+  h1 {
+    text-align: center;
+    @media #{$breakpoint-large} {
+      text-align: left;
     }
   }
+}
 
 .project-label {
   font-family: "montserrat-semibold";
