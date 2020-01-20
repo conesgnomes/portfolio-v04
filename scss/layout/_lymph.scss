@@ -404,6 +404,7 @@
         .solution-two-group {
           @media #{$breakpoint-medium} {
             display: flex;
+            flex-direction: row-reverse;
           }
           .solution-two-copy {
             @media #{$breakpoint-medium} {
@@ -426,6 +427,7 @@
         .solution-three-group {
           @media #{$breakpoint-medium} {
             display: flex;
+            flex-direction: row-reverse;
           }
           .solution-three-copy {
             @media #{$breakpoint-medium} {
