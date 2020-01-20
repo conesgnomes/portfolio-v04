@@ -225,7 +225,10 @@
       }
       .components-section {
         h3 {
-          margin-top: 120px;
+          margin-top: 60px;
+          @media #{$breakpoint-medium} {
+            margin-top: 120px;
+          }
         }
         .gds-typography-group {
           display: flex;
@@ -308,7 +311,10 @@
       }
       .next-section {
         h3 {
-          margin-top: 30px;
+          margin-top: 60px;
+          @media #{$breakpoint-medium} {
+            margin-top: 120px;
+          }
         }
       }
     }
