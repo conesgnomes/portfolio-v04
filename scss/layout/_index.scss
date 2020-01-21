@@ -5,10 +5,10 @@
     padding: 40px;
   }
   @media #{$breakpoint-large} {
-    padding: 80px;
+    padding: 80px 120px;
   }
   @media #{$breakpoint-xlarge} {
-    padding: 80px 160px;
+    padding: 80px 250px;
   }
   .index-header {
     display: flex;
@@ -93,10 +93,10 @@
         align-items: flex-end;
       }
       @media #{$breakpoint-large} {
-        padding-right: 80px; // must add padding here since display flex takes it out of regular flow of doc otherwise overall page padding won't be applied
+        padding-right: 120px; // must add padding here to match padding of grid projects below
       }
       @media #{$breakpoint-xlarge} {
-        padding-right: 160px; // must add padding here since display flex takes it out of regular flow of doc otherwise overall page padding won't be applied
+        padding-right: 250px; // must add padding here to match padding of grid projects below
       }
       .navigation {
         @media #{$breakpoint-medium} {
@@ -152,6 +152,9 @@
     }
     @media #{$breakpoint-large} {
       padding-top: 350px;
+    }
+    @media #{$breakpoint-xlarge} {
+      padding-top: 450px;
     }
     .project-group {
       display: grid;

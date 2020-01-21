@@ -21,10 +21,10 @@
     padding: 40px;
   }
   @media #{$breakpoint-large} {
-    padding: 80px;
+    padding: 80px 120px;
   }
   @media #{$breakpoint-xlarge} {
-    padding: 80px 160px;
+    padding: 80px 250px;
   }
   .gds-header {
     // background-image: linear-gradient(45deg, rgba(67,133,155,100), rgba(110,206,178,100));
