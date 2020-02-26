@@ -22,7 +22,25 @@
   <main id="swup" class="transition-fade">
     <body class="index-home">
       <SCRIPT>
-        function passWord1() {
+        // function passWord1() {
+        //   var testV = 1;
+        //   var pass1 = prompt('Please Enter Your Password','');
+        //   while (testV < 3) {
+        //     if (!pass1)
+        //     history.go(-1);
+        //     if (pass1.toLowerCase() == "pass101") {
+        //       window.open('https://connorlarsen.com/lymph.html');
+        //       break;
+        //     }
+        //     testV+=1;
+        //     var pass1 =
+        //     prompt('Access Denied - Password Incorrect. Reach out to connorlarsen@gmail.com for access.');
+        //   }
+        //   if (pass1.toLowerCase()!="password" & testV ==3)
+        //   history.go(-1);
+        //   return " ";
+        // }
+        function passWord2() {
           var testV = 1;
           var pass1 = prompt('Please Enter Your Password','');
           while (testV < 3) {
@@ -40,7 +58,7 @@
           history.go(-1);
           return " ";
         }
-        function passWord2() {
+        function passWord3() {
           var testV = 1;
           var pass1 = prompt('Please Enter Your Password','');
           while (testV < 3) {
@@ -93,20 +111,28 @@
             <div class="project project-one">
               <a onClick="passWord1()">
                 <div class="project-graphic">
+                  <img src="img/cva-landing-tablet.png" alt="Photo of CVA">
+                </div>
+                <h4 class="project-label">Sales app (coming soon)</h4>
+              </a>
+            </div>
+            <div class="project project-two">
+              <a onClick="passWord2()">
+                <div class="project-graphic">
                   <img src="img/lymph-landing-computer.png" alt="Photo of landing page">
                 </div>
                 <h4 class="project-label">Website refresh</h4>
               </a>
             </div>
-            <div class="project project-two">
-              <a onClick="passWord2()">
+            <div class="project project-three">
+              <a onClick="passWord3()">
                 <div class="project-graphic">
                   <img src="img/gds-landing-background.png" alt="Photo of landing page">
                 </div>
                 <h4 class="project-label">Design system</h4>
               </a>
             </div>
-            <div class="project project-three">
+            <div class="project project-four">
               <a href="daily_ui.html">
                 <div class="project-graphic">
                   <img src="img/daily-landing-background.png" alt="Photo of landing page">
