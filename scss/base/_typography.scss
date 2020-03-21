@@ -59,12 +59,13 @@ p, li {
   }
 }
 
-.bold {
-  font-family: "lato-bold";
+.confidentiality-statement {
+  font-size: 14px;
+  font-style: italic;
 }
 
-.green {
-  // color: #53c27c;
+.bold {
+  font-family: "lato-bold";
 }
 
 .sub-bullet {
@@ -75,7 +76,6 @@ p, li {
   font-family: "montserrat-semibold";
   color: $blue-grey;
   font-size: 16px;
-  // letter-spacing: 2px;
   line-height: 28px;
   text-decoration: none;
   text-transform: uppercase;
@@ -166,18 +166,6 @@ p, li {
     }
   }
 }
-
-// .project-subtitle {
-//   font-family: "lato-regular";
-//   color: #999999;
-//   font-size: 15px;
-//   @media #{$breakpoint-large} {
-//     font-size: 19px;
-//   }
-//   @media #{$breakpoint-xlarge} {
-//     font-size: 24px;
-//   }
-// }
 
 .circle-brand-title {
   font-family: "lato-regular";

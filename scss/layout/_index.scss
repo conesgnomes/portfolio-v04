@@ -165,6 +165,9 @@
         grid-column-gap: 30px;
         grid-row-gap: 40px;
         @media #{$breakpoint-medium} {
+          grid-template-columns: 1fr 1fr;
+        }
+        @media #{$breakpoint-large} {
           grid-template-columns: 1fr 1fr 1fr 1fr;
         }
         .project {
