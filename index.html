@@ -22,24 +22,24 @@
   <main id="swup" class="transition-fade">
     <body class="index-home">
       <SCRIPT>
-        // function passWord1() {
-        //   var testV = 1;
-        //   var pass1 = prompt('Please Enter Your Password','');
-        //   while (testV < 3) {
-        //     if (!pass1)
-        //     history.go(-1);
-        //     if (pass1.toLowerCase() == "pass101") {
-        //       window.open('https://connorlarsen.com/lymph.html');
-        //       break;
-        //     }
-        //     testV+=1;
-        //     var pass1 =
-        //     prompt('Access Denied - Password Incorrect. Reach out to connorlarsen@gmail.com for access.');
-        //   }
-        //   if (pass1.toLowerCase()!="password" & testV ==3)
-        //   history.go(-1);
-        //   return " ";
-        // }
+        function passWord1() {
+          var testV = 1;
+          var pass1 = prompt('Please Enter Your Password','');
+          while (testV < 3) {
+            if (!pass1)
+            history.go(-1);
+            if (pass1.toLowerCase() == "pass101") {
+              window.location = 'https://connorlarsen.com/cva.html';
+              break;
+            }
+            testV+=1;
+            var pass1 =
+            prompt('Access Denied - Password Incorrect. Reach out to connorlarsen@gmail.com for access.');
+          }
+          if (pass1.toLowerCase()!="password" & testV ==3)
+          history.go(-1);
+          return " ";
+        }
         function passWord2() {
           var testV = 1;
           var pass1 = prompt('Please Enter Your Password','');
@@ -47,7 +47,7 @@
             if (!pass1)
             history.go(-1);
             if (pass1.toLowerCase() == "pass101") {
-              window.open('https://connorlarsen.com/lymph.html');
+              window.location = 'https://connorlarsen.com/lymph.html';
               break;
             }
             testV+=1;
@@ -65,7 +65,7 @@
             if (!pass1)
             history.go(-1);
             if (pass1.toLowerCase() == "pass101") {
-              window.open('https://connorlarsen.com/gds.html');
+              window.location = 'https://connorlarsen.com/gds.html';
               break;
             }
             testV+=1;

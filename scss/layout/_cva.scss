@@ -124,7 +124,6 @@
           visibility: hidden;
         }
       }
-      .research-section,
       .design-section {
         margin-top: 60px;
       }
@@ -170,7 +169,7 @@
             .cva-detail-image {
               object-fit: contain;
               box-shadow: 0 0 30px 0 rgba(0,0,0,0.5);
-              width: 100%;
+              width: 90%;
               @media #{$breakpoint-medium} {
                 width: 70%;
               }
@@ -298,6 +297,26 @@
             }
           }
         }
+        .cva-hi-fi-group {
+          .cva-hi-fi-img-group {
+            display: grid;
+            grid-column-gap: 40px;
+            grid-template-columns: 1fr;
+            margin-bottom: 60px;
+            @media #{$breakpoint-medium} {
+              grid-template-columns: 1fr 1fr;
+            }
+            .cva-hi-fi-img {
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              img {
+                width: 100%;
+              }
+            }
+          }
+        }
+
         .cva-tap-group {
           margin-bottom: 60px;
           @media #{$breakpoint-medium} {
