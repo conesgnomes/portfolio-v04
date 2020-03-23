@@ -135,15 +135,13 @@
         .team-group {
           display: grid;
           grid-template-columns: 1fr;
+          padding-left: 0;
           @media #{$breakpoint-medium} {
             grid-template-columns: 1fr 1fr;
           }
-          ul {
-            padding-left: 0;
-            li {
-              margin-top: 0px;
-              list-style-type: none;
-            }
+          li {
+            margin-top: 0px;
+            list-style-type: none;
           }
         }
         .cva-mock {
@@ -152,10 +150,27 @@
           align-items: center;
           img {
             width: 100%;
+            @media #{$breakpoint-medium} {
+              width: 80%;
+            }
           }
         }
       }
       .design-section {
+        .cva-strategy-mov-container {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          margin: 30px 0 60px 0;
+          .cva-strategy-mov {
+            object-fit: contain;
+            width: 90%;
+            box-shadow: 0 14px 18px rgba(12, 0, 51, 0.1);
+            @media #{$breakpoint-medium} {
+              width: 70%;
+            }
+          }
+        }
         .cva-wireframe-group {
           margin-bottom: 60px;
           .cva-subsection {
@@ -168,7 +183,6 @@
             margin: 30px 0 60px 0;
             .cva-detail-image {
               object-fit: contain;
-              box-shadow: 0 0 30px 0 rgba(0,0,0,0.5);
               width: 90%;
               @media #{$breakpoint-medium} {
                 width: 70%;
@@ -196,9 +210,21 @@
               display: flex;
               justify-content: center;
               align-items: center;
+              img {
+                width: 80%;
+              }
+            }
+          }
+          .cva-colors-img-mobile {
+            margin: 30px 0 60px 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            @media #{$breakpoint-medium} {
+              display: none;
             }
             img {
-              width: 80%;
+              width: 100%;
             }
           }
           .cva-graphics-group {
@@ -215,7 +241,10 @@
               justify-content: center;
               align-items: center;
               img {
-                height: 80px;
+                width: 100%;
+                @media #{$breakpoint-medium} {
+                  width: 80%;
+                }
               }
             }
           }
