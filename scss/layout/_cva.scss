@@ -105,6 +105,9 @@
             // list-style-type: none;
           }
         }
+        .cva-subsection {
+          margin-top: 60px;
+        }
         #overview-anchor {
           display: block;
           position: relative;
@@ -159,7 +162,7 @@
           display: flex;
           justify-content: center;
           align-items: center;
-          margin: 30px 0 60px 0;
+          margin: 30px 0 100px 0;
           .cva-strategy-gif {
             object-fit: contain;
             width: 90%;
@@ -191,9 +194,6 @@
               }
             }
           }
-          .cva-subsection {
-            margin-top: 60px;
-          }
           .cva-detail-image-container {
             display: flex;
             justify-content: center;
@@ -218,9 +218,6 @@
         }
         .cva-system-group {
           display: grid;
-          .cva-subsection {
-            margin-top: 60px;
-          }
           .cva-colors-img-desktop {
             margin: 30px 0 60px 0;
             display: none;
@@ -276,7 +273,7 @@
             img {
               width: 100%;
               @media #{$breakpoint-medium} {
-                width: 80%;
+                width: 60%;
               }
             }
           }
@@ -284,19 +281,19 @@
             display: grid;
             grid-template-columns: 1fr;
             @media #{$breakpoint-medium} {
-              grid-template-columns: 1fr 1fr;
+              // grid-template-columns: 1fr 1fr;
+              margin: 30px 0 60px 0;
             }
             .cva-graph-img {
               display: flex;
               justify-content: center;
               align-items: center;
               @media #{$breakpoint-medium} {
-                margin: 30px 0 60px 0;
               }
               img {
                 width: 100%;
                 @media #{$breakpoint-medium} {
-                  width: 80%;
+                  width: 60%;
                 }
               }
             }
@@ -305,19 +302,19 @@
             display: grid;
             grid-template-columns: 1fr;
             @media #{$breakpoint-medium} {
-              grid-template-columns: 1fr 1fr;
+              // grid-template-columns: 1fr 1fr;
+              margin: 30px 0 60px 0;
             }
             .cva-table-img {
               display: flex;
               justify-content: center;
               align-items: center;
               @media #{$breakpoint-medium} {
-                margin: 30px 0 60px 0;
               }
               img {
                 width: 100%;
                 @media #{$breakpoint-medium} {
-                  width: 80%;
+                  width: 60%;
                 }
               }
             }
@@ -326,19 +323,19 @@
             display: grid;
             grid-template-columns: 1fr;
             @media #{$breakpoint-medium} {
-              grid-template-columns: 1fr 1fr;
+              // grid-template-columns: 1fr 1fr;
+              margin: 30px 0 60px 0;
             }
             .cva-pie-img {
               display: flex;
               justify-content: center;
               align-items: center;
               @media #{$breakpoint-medium} {
-                margin: 30px 0 60px 0;
               }
               img {
                 width: 100%;
                 @media #{$breakpoint-medium} {
-                  width: 80%;
+                  width: 60%;
                 }
               }
             }
@@ -371,11 +368,9 @@
           }
           .cva-hi-fi-img-group {
             display: grid;
-            grid-column-gap: 20px;
             grid-template-columns: 1fr;
-            margin-bottom: 60px;
             @media #{$breakpoint-medium} {
-              grid-template-columns: 1fr 1fr;
+              grid-template-columns: 1fr;
             }
             .cva-hi-fi-img {
               display: flex;
@@ -383,6 +378,11 @@
               align-items: center;
               img {
                 width: 100%;
+                margin: 0px;
+                @media #{$breakpoint-medium} {
+                  margin: -20px;
+                  width: 80%;
+                }
               }
             }
           }
