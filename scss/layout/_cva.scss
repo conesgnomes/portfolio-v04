@@ -16,6 +16,14 @@
 
 // --------------------------
 .cva-interior-body {
+  .hideme1 {
+    opacity: 0;
+    position: relative;
+    bottom: -70px;
+  }
+  .hideme2 {
+    opacity: 0;
+  }
   padding: 20px;
   @media #{$breakpoint-medium} {
     padding: 40px;
